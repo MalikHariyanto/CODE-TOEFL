@@ -1,0 +1,37 @@
+{
+  "totalQuestions": 600,
+  "bySplit": {
+    "diagnostic": {
+      "structure": 10,
+      "listening": 10,
+      "reading": 10,
+      "passages": 2,
+      "audioStimuli": 2,
+      "audioSeconds": 110.185
+    },
+    "practice": {
+      "structure": 190,
+      "listening": 120,
+      "reading": 120,
+      "passages": 24,
+      "audioStimuli": 72,
+      "audioSeconds": 1512.045
+    },
+    "final": {
+      "structure": 40,
+      "listening": 50,
+      "reading": 50,
+      "passages": 10,
+      "audioStimuli": 35,
+      "audioSeconds": 1279.951
+    }
+  },
+  "readingPassages": 36,
+  "audioStimuli": 109,
+  "audioCheckFiles": 1,
+  "dictionaryEntries": 100,
+  "difficulty": {
+    "menengah": 406,
+    "sulit": 194
+  }
+}

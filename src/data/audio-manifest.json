@@ -1,0 +1,1421 @@
+{
+  "L-A01": {
+    "audioStatus": "ready",
+    "duration": 46.655,
+    "scriptSha256": "2dec81242338286f136490fa142ce7b751b59f3e36c44a210b3283e3c2d78672",
+    "fileSha256": "e2f8c965f4057c3757330bfbc471e1b1c7bd0d7e0ef10ba6e0e39b8c130a2fd2",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A02": {
+    "audioStatus": "ready",
+    "duration": 63.53,
+    "scriptSha256": "c7ccf16c78f1217a7f4016b77ccbfb50fb8da5aa9b2baa51e9952508413260ad",
+    "fileSha256": "564878f8cf94992bdb8912dedac43ebdf2dbc7f26dd6df220c1a336644d224a9",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A03": {
+    "audioStatus": "ready",
+    "duration": 52.82,
+    "scriptSha256": "613a8debf17b4b071a39af6468ff170c3d270b2258c4b15e03e4007e9623f8f4",
+    "fileSha256": "9ca6f3c8e790ff42bcdb65a331e5e09e082f871caf1c0581dbcd21c1ba594e76",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A04": {
+    "audioStatus": "ready",
+    "duration": 67.213,
+    "scriptSha256": "3d2cc867852d659863a1145f7260ff13b7b8515b05a8a3091fd2c24c131ac6f5",
+    "fileSha256": "a39f05cb1e724f258a1eb9e20f063984def121dc35225207ea9bc7dca9e936ba",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "CHECK": {
+    "audioStatus": "ready",
+    "duration": 7.967,
+    "scriptSha256": "3aa2914fdfde4b136f5214ad0d612c4a3756604466c801f7b088e11b07c30c27",
+    "fileSha256": "3358a84936d7d99210f2df3440c46833fc5c0415bbed2eff64b659e6b441d992",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A05": {
+    "audioStatus": "ready",
+    "duration": 12.983,
+    "scriptSha256": "61c509cb05f6e9b705bccf63224d5cd2b3c7f8551cf2f59953a9d038634c9113",
+    "fileSha256": "ded5bd3f3c45df0a5854b0894ac9de91c57e3fba05c86aa0dade0c79a8fe31d3",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A06": {
+    "audioStatus": "ready",
+    "duration": 14.132,
+    "scriptSha256": "39074a57d657cdc1d5ec5fc05df9965b7a5a5faf40217811196add031b1be131",
+    "fileSha256": "36c61054189647e858f89952a74f26c19f80f24229cf612ec8431a18637f5ca7",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A07": {
+    "audioStatus": "ready",
+    "duration": 13.688,
+    "scriptSha256": "3e257f81b3269ddef28c4d04b998b0b6ec930703c3f91ff1585d897fe9a50f85",
+    "fileSha256": "949a5f7316bcdf40b27f6ec515b240bbdc63e9e8a2c86385a8023babf729ac65",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A08": {
+    "audioStatus": "ready",
+    "duration": 12.408,
+    "scriptSha256": "1c87ebf92b45f506dc938e3ab472e993174de5c63c59d110c26d67663796d866",
+    "fileSha256": "81b26d5481579fb79a955583f5e6cb8451d33bfc71d562abfcf0cc666a20e24d",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A09": {
+    "audioStatus": "ready",
+    "duration": 11.624,
+    "scriptSha256": "5b03dbc2f363fe61eb822a8c2b41a6768558d85800f3146ff896cbcb33a4db8e",
+    "fileSha256": "18b068285c73470023ed29b964c7a5223f8b88cdc16cf2eddf2e97934a128f32",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A10": {
+    "audioStatus": "ready",
+    "duration": 13.636,
+    "scriptSha256": "417c88e4af484e315c47e0644c4b1b1b5a7a4fdd46d9013e78bea61ad1e8a716",
+    "fileSha256": "472212ded396f73e54f57e46366204048e5995190239f3710f396cccdebfea3a",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A11": {
+    "audioStatus": "ready",
+    "duration": 13.505,
+    "scriptSha256": "dafa0d2c36ef311f2debbec4ccf47ccd1812cac21e8f63bc6075484807bd0983",
+    "fileSha256": "f4dde0769a11c3460937bd6b0d6b81c60f527e721d2eef044883ee4e166f7682",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A12": {
+    "audioStatus": "ready",
+    "duration": 13.688,
+    "scriptSha256": "ef8dc0fec56e08b3ad1180a440cdb50eb072702dc512506012022b38b299dcab",
+    "fileSha256": "e3699cc57c8fc199f9349be9110b86b8bacbfb455810e9bf79bcd88512208026",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A13": {
+    "audioStatus": "ready",
+    "duration": 12.852,
+    "scriptSha256": "e037410f1d86ff9b99686fd13240bc2044b762d277c03b82463e0289bf74f2ee",
+    "fileSha256": "33e1551b7e8523a16856934f0d8a39b745752e7f2a28978895f31a5a2c77df56",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A14": {
+    "audioStatus": "ready",
+    "duration": 13.897,
+    "scriptSha256": "a5029e10a863dfd07954625961e03b5a330817fcbca30b9415f86d477fac05a0",
+    "fileSha256": "46db7a16615225e22c26b5d803326ff8e4e824075822a9556261bc3b26124f53",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A15": {
+    "audioStatus": "ready",
+    "duration": 12.748,
+    "scriptSha256": "21cc461f15f2dbf9457092ccfa5dfc9db75d81b70ca49fc5c142a48ca6a90749",
+    "fileSha256": "0d00728f07c55053843180baa2a43779f46cb8c121359c5483a9fdca567dec6a",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A16": {
+    "audioStatus": "ready",
+    "duration": 13.192,
+    "scriptSha256": "168b27809d30e39808bcfdb1527690a50878343b292f32847c77ab0caf13b7a7",
+    "fileSha256": "1fe17c4924d24c947edd3c100a78f1fe776cea80be05bfdb709125fcce16e98e",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A17": {
+    "audioStatus": "ready",
+    "duration": 13.427,
+    "scriptSha256": "8e306dcd7d148efdc8d35d89fb4e6a44c194458b4e18945e9d4539e84b7be655",
+    "fileSha256": "55f2c0b03bfd56a206cf5850183ea4a366bdc672cd040f20c4371e630168adf9",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A18": {
+    "audioStatus": "ready",
+    "duration": 14.08,
+    "scriptSha256": "495cd53c31f0b179b1f414c22dec9213c9c091ef4eef3a3203df4d793220dd38",
+    "fileSha256": "157f609a458441126599950bb1df119b64830bc0ab4a2a2b71dfe500338ae4d7",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A19": {
+    "audioStatus": "ready",
+    "duration": 11.494,
+    "scriptSha256": "814a62ea12982fa5b110355e09cd4cc76178be2f5261804c4d7162e3a98bdf54",
+    "fileSha256": "710510b94bb31508f6ae59d7f5b6561e364d4ad6832e810b36440f0b309a0255",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A20": {
+    "audioStatus": "ready",
+    "duration": 11.964,
+    "scriptSha256": "38ab4f23adba68cb64c74b925fe6cc2ada02dab004ccc18ae6330c33b0be5376",
+    "fileSha256": "2078834291e1d7251caf9f324657c4a80d7843012cba57e2acd72fb48774af9e",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A21": {
+    "audioStatus": "ready",
+    "duration": 12.199,
+    "scriptSha256": "9656f214662b540b4d922e4ec6c4e87bd17612a5ab4f25ae8fc3b13d7aa452d4",
+    "fileSha256": "e98bd50daaf1d01981f234f8cf964b4ddc2243aa75906f753dad3579588d1dde",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A22": {
+    "audioStatus": "ready",
+    "duration": 12.356,
+    "scriptSha256": "ad135e5f2c9b67d29b53b3a82320db0ce6ffa11640c94216e2e21dbff2e22b3f",
+    "fileSha256": "d56d1568671483a586a8f6b18ba66622090197613e70691305fddb208c600058",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A23": {
+    "audioStatus": "ready",
+    "duration": 12.774,
+    "scriptSha256": "4e7f7b106cc6129ac7353d10fbbb2df355732be67d751cb10b315ad203cce2f1",
+    "fileSha256": "6c1c553e03fa4b1b6f65da2db1c90b986d22d99af48bfad2878c192a72321c43",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A24": {
+    "audioStatus": "ready",
+    "duration": 13.349,
+    "scriptSha256": "69e6917d7c1360a07fdf463b5b8b5fa02606c0ec5d58486dc4ba53702dd6b736",
+    "fileSha256": "4909e57e61b746da71ee35852535030d25b2dcdd10db38fa7158287fce6161d8",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A25": {
+    "audioStatus": "ready",
+    "duration": 11.102,
+    "scriptSha256": "8144d2b184d6f688e2d5fbb51177ebc7ce7a363f286a77cb224deac6bb3c78f4",
+    "fileSha256": "370be4fa361628486701bcaa8337cedaf7f1abebcbf762b785e2fbdd7117b437",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A26": {
+    "audioStatus": "ready",
+    "duration": 13.871,
+    "scriptSha256": "4cab936aa55b5e69a0118fd91d5d54729290b3a1083ca6096263e8ed3d41c745",
+    "fileSha256": "91f603c360110d8a7debbbf3d45e569bb8c3e342953fb1b582c671c3fa9bc30d",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A27": {
+    "audioStatus": "ready",
+    "duration": 11.99,
+    "scriptSha256": "ce2f91fe72a2ff922e68c1c2f5ecbf8670acb45ea83765adb32032d4e06b9a98",
+    "fileSha256": "00e484ec872482b710cfa3f345d849ceb44a6876aa2ff6a6353f0bb964c3d67d",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A28": {
+    "audioStatus": "ready",
+    "duration": 12.042,
+    "scriptSha256": "0ee97c003b02e9a15c400fa23b3096f6c6b131e7f3f749b684910e5dca328259",
+    "fileSha256": "6c75b13fdc19bdb7f2d78744ac05f180bc4b804ad6827beb4660a464d8bfa10e",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A29": {
+    "audioStatus": "ready",
+    "duration": 12.878,
+    "scriptSha256": "cf27d3b75499573b1b0a05e7599f91f68458e2460db6ce7920e8db63e5d83726",
+    "fileSha256": "73265de667c045fd166fcf0b9e2f4074cf92416cc9c15a84ccfc2c433e12a593",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A30": {
+    "audioStatus": "ready",
+    "duration": 13.349,
+    "scriptSha256": "bd32ccc2a34b31e2b7845dd9e65859a3c9b0aacfbdf118b29c890de33bda1774",
+    "fileSha256": "366a46d34a01f5d60f36c849836819edcbe8b073038e5172d0aaf3d9a99e49ac",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A31": {
+    "audioStatus": "ready",
+    "duration": 12.904,
+    "scriptSha256": "c5141806cfd359156b766a1a44fe11a7fdbeffad5d7a16272b7d745b937da714",
+    "fileSha256": "acd214e38f8ee28c219dcdd02ff4ccb884f123aadff3581fccc52fc003a78f10",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A32": {
+    "audioStatus": "ready",
+    "duration": 13.636,
+    "scriptSha256": "82078cf998c2b6c8e6831fa077f7bd895ef6c54356f142d60ff55b026340fed5",
+    "fileSha256": "af4100fb6842f220080c450db395a9466028ebe9592900b6c397398a7e6d7efd",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A33": {
+    "audioStatus": "ready",
+    "duration": 11.337,
+    "scriptSha256": "81304a38917c490f15e023d8aa46d4463c06b1b5a954de21a81f87d3c3bfdf21",
+    "fileSha256": "3784209f96d88c9e1615b4ce9305ccd490a61931bd61fc3151072b415501b12c",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A34": {
+    "audioStatus": "ready",
+    "duration": 13.27,
+    "scriptSha256": "c975c980c5b1609a60059219f8e3821ae20f083517b53e1ec68debe0cf85fcf9",
+    "fileSha256": "8f0bc7317557e48f1d5e877cd02352e3b1e25cdea9b23d2e5a5c6d3ce856322f",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A35": {
+    "audioStatus": "ready",
+    "duration": 13.035,
+    "scriptSha256": "9c70a20ec8bc0f1ba0d327ff381cc9b936301f2115557b2803358a2bf63ad05d",
+    "fileSha256": "780bf54afb566755d3506fdabc3d0ef310dbb164ecdddf3f2a3134acf9067f61",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A36": {
+    "audioStatus": "ready",
+    "duration": 13.192,
+    "scriptSha256": "3f4e5b44b761c664cfe020a3ea96b75fe12d2b7f8be890f43ae8808ed7564c8c",
+    "fileSha256": "ff9701b0a23739e8f577fc5d7018b54be808f16cc172aef8960d648a1deb019e",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A37": {
+    "audioStatus": "ready",
+    "duration": 12.748,
+    "scriptSha256": "8f62770700a168270d9a4ecc6c54c7e1e5c53a293579524a24f94c80d0978950",
+    "fileSha256": "03205837de0a56790f468e1de5fdf17a6ece94d97c8ba905b15d855fc5b3a0ed",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A38": {
+    "audioStatus": "ready",
+    "duration": 12.748,
+    "scriptSha256": "8b42a4b1df65ce80a59f4306b1d5e90734b72b2a47ef3e28be236afcfc0a3481",
+    "fileSha256": "716e9b4526e7e1d355e5de11246ef5e18b04e89d8b5fadbbbe941d48c09a4694",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A39": {
+    "audioStatus": "ready",
+    "duration": 12.069,
+    "scriptSha256": "83ed0d04566d1a82595558dcb99519e8ac935e20f90ca05b1ccc16f8fdc0fcb3",
+    "fileSha256": "8dee5e28674038dae6ea6791730fbc8472344a013db1c31617bf87501cfdde2c",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A40": {
+    "audioStatus": "ready",
+    "duration": 11.076,
+    "scriptSha256": "781f525b50737d48f011ff1821201a5a84ea241b98d4d0d06aaedabf349f38ab",
+    "fileSha256": "08de0ac3b826486b39598467f7bd69a7b16ff6c7ad012cd8ec0aeb367b1c333e",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A41": {
+    "audioStatus": "ready",
+    "duration": 12.852,
+    "scriptSha256": "71b8e28c95d066c6bec02476f0db774bc913d9a84599e35a0e9c6d02efc2da85",
+    "fileSha256": "7d349a288770b759b681820f874286a758b55449c028d7e29a7173a44157db57",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A42": {
+    "audioStatus": "ready",
+    "duration": 12.826,
+    "scriptSha256": "d0bb35df8bbed75e749dba088bbef5102f45ee7e38205c27035e70aa3ddd740f",
+    "fileSha256": "8b0640ab1a2a4fec27bf6fa234fc6528c8d4d2efaa4b836a1ceec27ae76cbd64",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A43": {
+    "audioStatus": "ready",
+    "duration": 12.591,
+    "scriptSha256": "9b6fe700218ce3619c92e03bdee2a0376bee3244fa10aa7e179f87db3cf81075",
+    "fileSha256": "fa1c07086d67a42af3fe0b68573d547b4c82b93973ca88a73940c54a9591a1ee",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A44": {
+    "audioStatus": "ready",
+    "duration": 14.916,
+    "scriptSha256": "9a6a5668fbd7e64b962b514f32d3312a842df3f6f5c685c05bf3f6ea7bba17cb",
+    "fileSha256": "d4b11afd1e5ff4029509821b69072ab775278822a114892d884f2f163197bb78",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A45": {
+    "audioStatus": "ready",
+    "duration": 12.748,
+    "scriptSha256": "da1ebdca00d152f9fab36384210277bdb9c82a7df531f6bd00ff405002157e2b",
+    "fileSha256": "afdfa7ac4baf66f00c7805d655caa975c5cda12afb301eed50122fa856e7cdbf",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A46": {
+    "audioStatus": "ready",
+    "duration": 12.8,
+    "scriptSha256": "d44b1f00fce240a9a898c935a4606536d90bc20bad9c25d9b177122490a09079",
+    "fileSha256": "94dc8593fa5bbd1917f1e2b2109a1df0c434bc18636aa8d0de44f28ccae5e872",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A47": {
+    "audioStatus": "ready",
+    "duration": 13.61,
+    "scriptSha256": "cd6f03629fbf78900233536fa137d82c7912e287975990526fc3e106400eaa68",
+    "fileSha256": "aa97c80e66d8a5bef74f8d0c3b0a083f51085e6dbceb2284cdb3c150d535746b",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A48": {
+    "audioStatus": "ready",
+    "duration": 13.166,
+    "scriptSha256": "b6e0bc4d0e2f311e2d9e1fb86b1fad9dff2ea194d465c9eb682b5905d0f1df95",
+    "fileSha256": "0124079f17a5ac34af9a86621b911c087cf791b2c68fa302c3ba2cd51f33b81c",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A49": {
+    "audioStatus": "ready",
+    "duration": 12.931,
+    "scriptSha256": "7d640629177d096aba02451d116af7e4f8f40a54fbaf3bb6864f9847e990f343",
+    "fileSha256": "03b9e21a7c4c7666f2313b93c9fe473655c3fe3f7414de80e785bbc185809203",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A50": {
+    "audioStatus": "ready",
+    "duration": 14.028,
+    "scriptSha256": "3ccd39dcf2b0fdc1c3a9da8c0d5aeae37f6e5ad2913a2c8c92caea379b68e6e5",
+    "fileSha256": "496412b0366bfa9f8a88ddb1026739e0224e5f39db9105d9939834f6a8ecd9e2",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A51": {
+    "audioStatus": "ready",
+    "duration": 11.546,
+    "scriptSha256": "540c1fcf8a2a52aa33a617da36a3a6d24066d9725678f9a367ea5d0fb77e0457",
+    "fileSha256": "8fa00ad60fd2cbf70c014a6ce7feb61cc45183a3fe3cd6838ace62f26d8f3f1d",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A52": {
+    "audioStatus": "ready",
+    "duration": 11.572,
+    "scriptSha256": "5803ba61ade365e1d599ec35a59b4262cceddc18fec0019371b9de7d2dcf9b7a",
+    "fileSha256": "f837bc086ec7ba5c3abd36233c13e4d59b909519ed2eeadfddae36e3b5e7d5c7",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A53": {
+    "audioStatus": "ready",
+    "duration": 13.636,
+    "scriptSha256": "7c8ed4e63acc62af2e68509f46c3c3b945095fd527909f8d5537cb534f842a89",
+    "fileSha256": "ad6c3f06a711d8d8b33f3a0bdd69d063fd38a11deda6266a0b8af8cb9df552ad",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A54": {
+    "audioStatus": "ready",
+    "duration": 13.74,
+    "scriptSha256": "daaba75054bb6d846be7cd806df4627b20614b02815f1b5ecc21193cb2698e16",
+    "fileSha256": "8921f1535a0ae70ae6b9a4981da12bc162897505b9578e44cc6d395f81707668",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A55": {
+    "audioStatus": "ready",
+    "duration": 12.33,
+    "scriptSha256": "a70a66d2a3481e87f155574aedeeb58c46f7526ca9d868e3a6b818b985857643",
+    "fileSha256": "5e19aed4f4ce3dca86b19c1be73795b6c08b5f4182ff39c30d908476f2919526",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A56": {
+    "audioStatus": "ready",
+    "duration": 13.531,
+    "scriptSha256": "13713c5d4c01338ded9d4bc374aaf6e1d4536cfd0596d249bac73f9b64603897",
+    "fileSha256": "d20d40c2e86328aed213483afe13a772cbca47b5254038f78cdfbfc1e202e732",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A57": {
+    "audioStatus": "ready",
+    "duration": 15.282,
+    "scriptSha256": "636bd31b4db337d2c1374389178228cc583b1c716ec0d8c00174bbc66b191f2a",
+    "fileSha256": "cf6efe98605335df861170a825105da0c5ce5c50548a2e63ddf8902dd4519106",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A58": {
+    "audioStatus": "ready",
+    "duration": 12.095,
+    "scriptSha256": "ed39945f77558da16e06310995d39a24352d39017df8f4061cecd5ce54180cf9",
+    "fileSha256": "9a3c9ec1ad951efd6c3df9fee70bd421f2cd6b0314ff188cfdbeedad6c8f6ca7",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A59": {
+    "audioStatus": "ready",
+    "duration": 12.722,
+    "scriptSha256": "68a667133b56dc298fddb49ef9c4730f3dd9160a0b586be779b1dafc8378412e",
+    "fileSha256": "523d8372b981599e4022af0aa44d7df703ffdfcb7379398519869ef720944b01",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A60": {
+    "audioStatus": "ready",
+    "duration": 13.427,
+    "scriptSha256": "bd2552f478f927f46bcff6616c41fc1b0151ac8182499436639a8410a61c20e7",
+    "fileSha256": "ee818e018aed09b1f05ef8f3311c7c7dbbef77f901571125fcc81551a475d4f2",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A61": {
+    "audioStatus": "ready",
+    "duration": 12.826,
+    "scriptSha256": "aa33ce2ab0116b4042a969ab59041a03da829575d66a9ddceb4dda51ab2c3df8",
+    "fileSha256": "a5a90f529ec579676e1281b58daba9d685e150d5352dfef542c62354cea3f201",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A62": {
+    "audioStatus": "ready",
+    "duration": 13.009,
+    "scriptSha256": "409a45c243df49ae6f23fe8a31876ab6cc7f85204e2ec4db564d733ac1eceab4",
+    "fileSha256": "e3208dc4fd4f94de6eb1e77a594353f9ef0e403a26229ffd87362085164d8dcb",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A63": {
+    "audioStatus": "ready",
+    "duration": 12.095,
+    "scriptSha256": "e5ee0d69637027bf040673b314490cb20890109710dce9508992ff2cecb33d37",
+    "fileSha256": "9cc90dc8e851e77a23dd48058050fe19e28133410199963d566967c126be2b02",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A64": {
+    "audioStatus": "ready",
+    "duration": 13.505,
+    "scriptSha256": "d219ed06efdc7554f58454633b699b8b9174520bb90d5a8ca2843671a7bcdb24",
+    "fileSha256": "8686a57d588b288d6b3164fe051af5a21cbf53967d9f796f68b925e5ce730317",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A65": {
+    "audioStatus": "ready",
+    "duration": 55.745,
+    "scriptSha256": "a84077709903bddaf280f7d64c6c76d6e5c5d36b1767bfc083f1e3f53bf9fd5c",
+    "fileSha256": "ae5c427456e31b8a21705fd68ae8dff84613cb6f7e9ebf8f89fa1b351929edfd",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A66": {
+    "audioStatus": "ready",
+    "duration": 56.947,
+    "scriptSha256": "144557a4b33a5d0fc55154553de94eebfbceae2e0254a8a022d15bf09b6c8015",
+    "fileSha256": "e0b3799bd23c17a93c889fb55830a5f688b69a18c0ee529aafb9feaac12b8982",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A67": {
+    "audioStatus": "ready",
+    "duration": 55.589,
+    "scriptSha256": "e8200f073c750824361b170543c96ef37af9ba641c201857d030420dc2bd3f9f",
+    "fileSha256": "8c488971f393837058f66775b47c44a680475bd7e928d1ac467a88edb0c5d371",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A68": {
+    "audioStatus": "ready",
+    "duration": 51.853,
+    "scriptSha256": "39a147cd7f9a9ca255d36437a85cb9626747bc69d34c111f7a4d101b032b5481",
+    "fileSha256": "48caa6326db9193a6da08f900f6b895d4d6ce7b87fc39f240edb7b115c0531ce",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A69": {
+    "audioStatus": "ready",
+    "duration": 51.827,
+    "scriptSha256": "523b1ba5024118a304aa2041fc5f72be66849300f78922f5700848821ed032e0",
+    "fileSha256": "8b775d3477e5f785f0240647b9245c1d198ff56663bae5654c35b95468c315b8",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A70": {
+    "audioStatus": "ready",
+    "duration": 67.239,
+    "scriptSha256": "b92273c2ae69c26c85761da7ae9ffd7317b70a9eb054495e90b43cdec8108503",
+    "fileSha256": "d704b9b810a893f258c76133e4828a3635e96b49845e5b7675c9ad7feece667b",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A71": {
+    "audioStatus": "ready",
+    "duration": 71.784,
+    "scriptSha256": "4998b30948cde656084fe5eae688aa1cca2427142c6f476b7e4a277ba494b6d5",
+    "fileSha256": "169976584f0c85f712cee16efe5e17cc61a56efa0232b32f8faaaab8df7399ba",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A72": {
+    "audioStatus": "ready",
+    "duration": 68.911,
+    "scriptSha256": "714c8d5bfd1a96a1697e30d5e0542cd9d092dec48dd87c0f4d84df37a59b862b",
+    "fileSha256": "115a5ad805845cbfeac6d1f3a7473c4208c4773ee3e893bd5ce293ee66e530c8",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A73": {
+    "audioStatus": "ready",
+    "duration": 69.851,
+    "scriptSha256": "0bdc4164fb661e52d8bbfc8e9d3585198f3d7ec7301e6bec6606f2afdcd8f187",
+    "fileSha256": "7199383c44b1d9e526ec18d439729109a2db147c184dc5f538a0bdfac8268699",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A74": {
+    "audioStatus": "ready",
+    "duration": 67.239,
+    "scriptSha256": "3296e1371b7323a541cf6d76842c31aef53fc4fafb994be62fd04e7e27e8c644",
+    "fileSha256": "9cf7265630149d5e426c604e73dad14f273d1c90b942e826ca84b6b46580784c",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A75": {
+    "audioStatus": "ready",
+    "duration": 18.469,
+    "scriptSha256": "47a4ec6a46656cc8516e3948620af4d1a6898d098e5b7122e5695fe2536b7bae",
+    "fileSha256": "7fc0491c44b32bedc28ef54b0886bab1f4f28f7a8ffc6023b4521e9c51244a04",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A76": {
+    "audioStatus": "ready",
+    "duration": 19.696,
+    "scriptSha256": "ae4bd726a33f42315221e3f691a1738685871fa25525076a2f818b768b2e30b0",
+    "fileSha256": "0c2b2070080d1eb852071f290399b7ccb0274f189d3ea85ba2a68b7015d7b66f",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A77": {
+    "audioStatus": "ready",
+    "duration": 17.998,
+    "scriptSha256": "2e8e55ff7bf59a28b36eb4584ebcdfb1df1527a1a6bc2dc76e5ad3efa7af7960",
+    "fileSha256": "3779011eec0910b3ae39d02f90f589585139f98869468242e298521a6a46c9b9",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A78": {
+    "audioStatus": "ready",
+    "duration": 19.148,
+    "scriptSha256": "3b933cb4914e1b6bcc226572ead76cf11f36cff1055d2fdac4f548190e885100",
+    "fileSha256": "94fa8ee74dcef219fc2544efd74a6c3958cdd867d13e467da9f05c124a151c81",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A79": {
+    "audioStatus": "ready",
+    "duration": 17.45,
+    "scriptSha256": "3cb54d85f42229fb4a2e32326194f2ba4a73b38830277f1f160ef111097acd0a",
+    "fileSha256": "693b77f0fcbfe1b29e13e171f7ee637fdeeb8fe8d6a73a1888229c75c2cf5b2c",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A80": {
+    "audioStatus": "ready",
+    "duration": 18.547,
+    "scriptSha256": "bd1406e3ebb16c737c9ab359ec78671f5e570207d33c2d8e158ca1378bc3fa8b",
+    "fileSha256": "c5d6237bf75fe727d686ef9ae7f544458c64afcb43e4c8b711b03473b2309a40",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A81": {
+    "audioStatus": "ready",
+    "duration": 17.241,
+    "scriptSha256": "c2aea52b9a0351b182aad34ce42c373a7d8e961ba7c05cad2a963f1081b13213",
+    "fileSha256": "4a597a81dcc346aaff3e3be6b23a3e1e915c294bce0252a66522ea8133c1cb5c",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A82": {
+    "audioStatus": "ready",
+    "duration": 17.162,
+    "scriptSha256": "7490b52950a760080f0a8d03db27cd43554bb1b2e6a9fee5328697ca5807d255",
+    "fileSha256": "a2e1bd2855251635414b0af440c0d1ed14eed6ff449931dda449aa093f9a8370",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A83": {
+    "audioStatus": "ready",
+    "duration": 18.155,
+    "scriptSha256": "b2e0f35fca320e86a95ac363c2378a811d29df5990547693b106253cd1deac27",
+    "fileSha256": "af33d683f7ea8eae9233e2ed8db4c299905bc077ac719105b85c817d7a641126",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A84": {
+    "audioStatus": "ready",
+    "duration": 18.939,
+    "scriptSha256": "9d5bf7e24c63a072bb3da3d4e6cbca3f4e22610bdf15cb5774e3ab3e36453d2b",
+    "fileSha256": "96b9b386dd43f0c0c1cc01c96dfce62aa07169811a1e920dd0fd9c57e0036de0",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A85": {
+    "audioStatus": "ready",
+    "duration": 19.696,
+    "scriptSha256": "246f64b7ee8d15176a3449d2eaf4ae48a7ca15b8e9f47c863f10d82b600aae01",
+    "fileSha256": "c3aabeef12e996d24af9c5dfed5781f347082f76645e30e38b3b5facdde82492",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A86": {
+    "audioStatus": "ready",
+    "duration": 18.808,
+    "scriptSha256": "fb3ffd054eb0b41e7d2f230e430c734fe6a66287261b9beffa55581f0ef5b811",
+    "fileSha256": "8b64d1507aee0bc414cbf3289f29765a6159e8c610c916409ad0b4deccdd3a4c",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A87": {
+    "audioStatus": "ready",
+    "duration": 18.286,
+    "scriptSha256": "7fc134edc440a9cf08cad8ac4ed4dbc6cbc61338605fded05aad5088115e5dd6",
+    "fileSha256": "d4eaf85704c6aba7547a9d833ce38b2cf9f02de24c9ad2ce796fb94df5666bcf",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A88": {
+    "audioStatus": "ready",
+    "duration": 18.181,
+    "scriptSha256": "8220125990183bde97b1054d816e43c9326ba51fc315880a3b08688b2fa729e2",
+    "fileSha256": "ca0d753582f780b7f31d531874c50781062394bae3e4fdfbc6851084f6c3acc0",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A89": {
+    "audioStatus": "ready",
+    "duration": 19.749,
+    "scriptSha256": "4b47be38ff9de6350b8e4396bbe90555fb8e7ff83971dcc8be346626fb214fdf",
+    "fileSha256": "7e9a3f564e35b27a27a87cba31fe4b1888d437a70ab62e444fda25c5a0be4b0a",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A90": {
+    "audioStatus": "ready",
+    "duration": 18.286,
+    "scriptSha256": "59dc9af5ba80046088f2b3fb475e3c16f801d8f0452910d28c3ea46207196bcb",
+    "fileSha256": "67cd74031f47f49aa545122d958333e5745692b8c95b825ee36cda763636d050",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A91": {
+    "audioStatus": "ready",
+    "duration": 19.984,
+    "scriptSha256": "c861d10c490c05e5d6fa0524c9e0a49c22804b8873c5e7a0fbec2dda7ec7e203",
+    "fileSha256": "7d71582f3184f3efd0feab2e271820de7cb14768ab7de0977b02eecf747bf194",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A92": {
+    "audioStatus": "ready",
+    "duration": 19.2,
+    "scriptSha256": "8ad7fdf048f129e463c5eab86f81dcd32b22715abc5428d2d1ff36d2d869bb17",
+    "fileSha256": "c92999e2fe4faf91a86ab270b1b9c52ea0d5193e51895dcd4549832828937f2d",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A93": {
+    "audioStatus": "ready",
+    "duration": 18.521,
+    "scriptSha256": "b36c4f33e001c1a7beb83d51899c2337b8553451a82becb34677946d29f973a6",
+    "fileSha256": "54d78e4a607b73f84ecf8ccb518618c45bbd5daa21ffe3824d0496b916024505",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A94": {
+    "audioStatus": "ready",
+    "duration": 20.376,
+    "scriptSha256": "222a728364a23c6434596efa991587fcab4f2a5700fd6d9fe61f01c0dde88411",
+    "fileSha256": "42421c4cb4d913b467a1a551e54c23411956c34091b1c5bd30bd32d63b7ce6a1",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A95": {
+    "audioStatus": "ready",
+    "duration": 17.92,
+    "scriptSha256": "aa0557ec5de9c0b801479e0baf8d08c6fee582a074f72f357729635ef58d2973",
+    "fileSha256": "1e520b5eb47cdb9649499b1d64551b27aab4fe50c1fef147254f8d4c77593ee0",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A96": {
+    "audioStatus": "ready",
+    "duration": 19.827,
+    "scriptSha256": "1bed79b18a3dcba9a308e186c6b50d66a8cac4bd693b8674df6ae39a2108a2ec",
+    "fileSha256": "969b59058cea3e67aada6ef732f5aa0404809cda399674492476384865193e12",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A97": {
+    "audioStatus": "ready",
+    "duration": 19.618,
+    "scriptSha256": "9b61061997006e90a908341d7dc7b6623364cdd82e2bf1f4512b7b2949394e04",
+    "fileSha256": "08198446c56737661847ea55d739f214f8bb93f5fdd37e4aead389504673036d",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A98": {
+    "audioStatus": "ready",
+    "duration": 18.26,
+    "scriptSha256": "579aa24b99f5cde318326efc472ec158798880b88c2a8b9913831bf4fa952664",
+    "fileSha256": "b0e1a1b17fe238c85bc18a23152a952b91c23d4758b7b273522c2fe76f6de313",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A99": {
+    "audioStatus": "ready",
+    "duration": 17.737,
+    "scriptSha256": "9c08ea0d7ee91d4c9b1f6015bb724f10d34b94426b73f687efa0e20ea32a33b2",
+    "fileSha256": "fa6fef9a1d7c77d499088e3780a28bcee65f8910a2511a99b5d0daefcf96ea8a",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A100": {
+    "audioStatus": "ready",
+    "duration": 19.357,
+    "scriptSha256": "a14de51398f19e6d2f88a4a3998703977b4ad373b4202836c751503d5eb81e02",
+    "fileSha256": "9188bbbdcd80189a7944843e9993c962e4eb211d4c9e1c49f2016c84920478c1",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A101": {
+    "audioStatus": "ready",
+    "duration": 19.304,
+    "scriptSha256": "e18df6410b587059d82b28f2d9eff015fe41658628f8a2080e8011fa52ccd236",
+    "fileSha256": "ea27c90023083f978d1efda702a18618c16e4c913c52adfce82bc192c62f97f9",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A102": {
+    "audioStatus": "ready",
+    "duration": 19.226,
+    "scriptSha256": "11bf98a8de22531ddf246d5144393800c4c488ae10cb8969021dd5519143fc46",
+    "fileSha256": "8066a851c399a4a46e5c8f990da97dc7e6ac5b8b7eed20625e2fdfaf0cb3e187",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A103": {
+    "audioStatus": "ready",
+    "duration": 19.174,
+    "scriptSha256": "3d94d19dca492281e6a790b53daa02c4abc6bea9514da542be4e82af365ebb12",
+    "fileSha256": "03515f12eaee15f48e3553f25a7fb12f5d3cc450f38fd887c626d681e3b5ced1",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A104": {
+    "audioStatus": "ready",
+    "duration": 18.73,
+    "scriptSha256": "74f85f9f7d73ed2c6374ca71136361341e11799af159eadfc349bb243bc81190",
+    "fileSha256": "f6e9c679ad104775fd500b2c08dbbe688d7b6a7a711978b1a04da98a0c769e01",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A105": {
+    "audioStatus": "ready",
+    "duration": 133.695,
+    "scriptSha256": "6e02e27b7728d0af063adf29095aa354afe4d19be0a9e0913297e1dd53a4ea46",
+    "fileSha256": "e1749dcc213175383bb862b04374ee096662b76c5c2e0e33f2971e884406cbb6",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A106": {
+    "audioStatus": "ready",
+    "duration": 135.367,
+    "scriptSha256": "c4884efcf22cb0ba0770b3b4b9c9e20dc18674dfcd6bb0a52bc1a65fb5453bca",
+    "fileSha256": "d97d374b6c8e93afc75999b09101232c190cdfec42284a41b11843bdc97f3230",
+    "voices": [
+      "en-us+f3",
+      "en-us+m1",
+      "en-us+m3"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A107": {
+    "audioStatus": "ready",
+    "duration": 147.592,
+    "scriptSha256": "acd8a13637cfd2948a228fb5b8fea569b195fa0b1fe13307415e59233e894c75",
+    "fileSha256": "1cd9f39a95be01fb153800666e84a59f78e58ea3e5672ce60cde28b9554662c6",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A108": {
+    "audioStatus": "ready",
+    "duration": 156.056,
+    "scriptSha256": "f90de0946c9ae83c8382c91af96c0bd4dc86fb68114a1b448c002826c3a55cd5",
+    "fileSha256": "1aed9afe0e8bd7c786065163df1df2d2fec306afc737ae4376ed0e44cb0c96ae",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  },
+  "L-A109": {
+    "audioStatus": "ready",
+    "duration": 144.196,
+    "scriptSha256": "6c2e71a99e2e73a7af7827938137a8aa5a5383112540cf362c70611ada80b8a4",
+    "fileSha256": "ea60ad7d5d4a7334022465f919e54e1b5d3c380989637ab808a9c8b0b4ff33ca",
+    "voices": [
+      "en-us",
+      "en-us+m1"
+    ],
+    "engine": "eSpeak NG 1.52 / espeakng-loader 0.2.4",
+    "synthetic": true
+  }
+}
