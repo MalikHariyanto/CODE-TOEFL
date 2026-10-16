@@ -36,7 +36,11 @@ Perubahan yang di-push ke GitHub tidak otomatis memperbarui folder ZIP yang suda
 
 - Beranda dari riwayat nyata dan jalur 8 minggu yang fleksibel. Tombol awal mengarahkan ke materi.
 - **28 bab, 84 subbab, 56 cek pemahaman**: grammar dasar, Structure, kosakata, Reading, dan teori Listening. Ada tujuan belajar, fondasi, contoh dibedah, jebakan, serta jawaban cek pemahaman dengan alasan. Angka ini dihitung dari data, bukan tambahan bank soal.
-- Latihan dari bab mengumpulkan minimal 5 soal jika topiknya tersedia, mempertahankan seluruh konteks bacaan/audio, dan penguatan mengutamakan kelompok belum pernah dikerjakan. Bank tetap menyediakan akses kelompok/soal satuan yang dilabeli.
+- **Bank dan latihan dari materi: paket 10–20 soal**, dengan pilihan sasaran 10, 15, atau 20. Jumlah aktual dicetak pada kartu; bacaan/audio tetap utuh dan soal tidak digandakan untuk memenuhi jumlah. Structure dikelompokkan per topik.
+- Setiap kartu menampilkan pratinjau dan ID soal pertama dari paket yang benar-benar akan dibuka. Paket dalam satu tampilan tidak tumpang tindih. Mengubah filter/ukuran dapat menyusun ulang soal; gunakan filter belum dikerjakan untuk menghindari soal lama.
+- Memilih paket berbeda saat latihan belum selesai meminta konfirmasi: latihan lama disimpan ke Perkembangan lalu paket baru dibuka dari nomor 1. Membatalkan tetap di bank; melanjutkan paket yang sama mempertahankan nomor dan jawaban. Sesi lama satu soal diberi penjelasan dan tombol beralih ke paket baru.
+- Bila filter sangat sempit belum dapat menghasilkan 10 soal dalam konteks utuh, aplikasi menjelaskan kekurangan dan menawarkan perluasan filter. Soal pendamping dari bacaan/audio dihitung terpisah dari soal yang cocok filter.
+- Latihan materi/penguatan mendahulukan paket dengan soal belum dikerjakan paling banyak; setelah bank topik habis, soal lama dapat muncul kembali.
 - Pembahasan menyorot **alasan pilihan pengguna**, alasan kunci, empat opsi, bukti, dan strategi terkait. Pada error identification, label memperjelas bagian yang harus diperbaiki.
 - 600 soal: 240 Structure, 180 Listening, 180 Reading. Pembahasan berbahasa Indonesia menyertakan kunci, alasan keempat pilihan, konsep, dan bukti.
 - 36 bacaan, 109 rekaman stimulus, satu rekaman cek suara, serta 100 entri kamus lokal. Audio sintetis eSpeak NG; bukan rekaman penutur manusia.

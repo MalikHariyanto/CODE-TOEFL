@@ -19,13 +19,13 @@ test('external study backup accepts real notes and rejects executable URLs, unkn
  assert.throws(()=>validateBackup({...s,listeningStudies:[s.listeningStudies[0],s.listeningStudies[0]]}));assert.throws(()=>validateBackup({...s,listeningStudies:[{...s.listeningStudies[0],source:'unknown'}]}));assert.throws(()=>validateBackup({...s,preferences:{theme:'light',syntheticAudio:'true'}}));
 });
 
-test('lesson bundles contain five structure items or complete reading contexts and reinforcement avoids seen groups',async()=>{
+test('lesson bundles contain ten structure items or complete reading contexts and reinforcement avoids seen groups',async()=>{
  const {lessonBundle}=await import('../src/core/practice.js');const {questions}=await import('../src/data/index.js');
- const structure=lessonBundle(questions,'structure-core');assert.equal(structure.length,5);assert.ok(structure.every(q=>q.section==='structure'&&q.split==='practice'));
- const repeated=lessonBundle(questions,'structure-core',structure.map(q=>({questionId:q.id})),true);assert.equal(repeated.length,5);assert.ok(repeated.every(q=>!structure.some(x=>x.id===q.id)));
- const reading=lessonBundle(questions,'reading-reference');assert.equal(reading.length,5);assert.ok(reading.some(q=>q.skill==='reading-reference'));assert.equal(new Set(reading.map(q=>q.stimulus)).size,1);const whole=questions.filter(q=>q.stimulus===reading[0].stimulus);assert.deepEqual(reading,whole);assert.ok(reading.every(q=>q.split==='practice'));
+ const structure=lessonBundle(questions,'structure-core');assert.equal(structure.length,10);assert.ok(structure.every(q=>q.section==='structure'&&q.split==='practice'));
+ const repeated=lessonBundle(questions,'structure-core',structure.map(q=>({questionId:q.id})),true);assert.equal(repeated.length,10);assert.ok(repeated.every(q=>!structure.some(x=>x.id===q.id)));
+ const reading=lessonBundle(questions,'reading-reference');assert.equal(reading.length,10);assert.ok(reading.some(q=>q.skill==='reading-reference'));assert.equal(new Set(reading.map(q=>q.stimulus)).size,2);for(const stimulus of new Set(reading.map(q=>q.stimulus))){const whole=questions.filter(q=>q.stimulus===stimulus);assert.deepEqual(reading.filter(q=>q.stimulus===stimulus),whole);}assert.ok(reading.every(q=>q.split==='practice'));
 });
 test('every chapter including additional foundations and vocabulary links to a usable practice bundle',async()=>{
  const {lessonBundle}=await import('../src/core/practice.js');const {questions}=await import('../src/data/index.js');
- for(const l of lessons){const set=lessonBundle(questions,l.practiceSkill);assert.ok(set.length>=5,l.id);assert.ok(set.every(q=>q.split==='practice'&&q.section===l.section),l.id);assert.ok(set.some(q=>q.skill===l.practiceSkill),l.id);}
+ for(const l of lessons){const set=lessonBundle(questions,l.practiceSkill);assert.ok(set.length>=10&&set.length<=20,l.id);assert.ok(set.every(q=>q.split==='practice'&&q.section===l.section),l.id);assert.ok(set.some(q=>q.skill===l.practiceSkill),l.id);}
 });
