@@ -2,7 +2,7 @@
 // the author or endorser of these explanations. No live test items are copied.
 const part=(heading,text,example,analysis)=>({heading,text,example,analysis});
 const check=(prompt,answer,why)=>({prompt,answer,why});
-const c=(goals,parts,pitfalls,checks,practiceSkill)=>({goals,parts,pitfalls,checks,practiceSkill});
+const c=(goals,parts,pitfalls,checks)=>({goals,parts,pitfalls,checks});
 export const course = {
  'structure-core':c(['Membedakan predikat utama dari modifier.','Menentukan unsur yang hilang tanpa menerjemahkan seluruh kalimat.'],[
  part('1. Subjek bukan selalu kata pertama','Subjek adalah unsur yang diterangkan predikat. Cari kepala frasa nomina, lalu abaikan sementara frasa preposisi seperti of, in, with, dan klausa relatif. Kalimat dengan keterangan tempat di awal dapat menempatkan subjek setelah verba.','A box of fragile instruments sits beside the door.','Box adalah kepala subjek; of fragile instruments hanya menerangkan isi kotak. Sits adalah verba finite. Instruments tidak menentukan agreement karena berada dalam frasa of.'),

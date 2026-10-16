@@ -25,3 +25,7 @@ test('lesson bundles contain five structure items or complete reading contexts a
  const repeated=lessonBundle(questions,'structure-core',structure.map(q=>({questionId:q.id})),true);assert.equal(repeated.length,5);assert.ok(repeated.every(q=>!structure.some(x=>x.id===q.id)));
  const reading=lessonBundle(questions,'reading-reference');assert.equal(reading.length,5);assert.ok(reading.some(q=>q.skill==='reading-reference'));assert.equal(new Set(reading.map(q=>q.stimulus)).size,1);const whole=questions.filter(q=>q.stimulus===reading[0].stimulus);assert.deepEqual(reading,whole);assert.ok(reading.every(q=>q.split==='practice'));
 });
+test('every chapter including additional foundations and vocabulary links to a usable practice bundle',async()=>{
+ const {lessonBundle}=await import('../src/core/practice.js');const {questions}=await import('../src/data/index.js');
+ for(const l of lessons){const set=lessonBundle(questions,l.practiceSkill);assert.ok(set.length>=5,l.id);assert.ok(set.every(q=>q.split==='practice'&&q.section===l.section),l.id);assert.ok(set.some(q=>q.skill===l.practiceSkill),l.id);}
+});

@@ -8,8 +8,8 @@ Lingkungan: Linux x86_64, Node.js 24.19.0, npm 11.9.0, Vite 7.3.7, Playwright 1.
 | --- | --- |
 | `npm ci` dengan lockfile | Berhasil; dependency dapat dipasang ulang |
 | `npm run content:check` | 600 soal, 36 bacaan, 109 stimulus audio; rujukan, bukti, checksum, dan pemisahan set valid |
-| `npm test` | 23 pengujian Node lulus; tidak ada gagal atau dilewati |
-| `npm run test:browser` | 16 pengujian Chromium terhadap build produksi lulus; tidak ada dilewati |
+| `npm test` | 24 pengujian Node lulus; tidak ada gagal atau dilewati |
+| `npm run test:browser` | 17 pengujian Chromium terhadap build produksi lulus; tidak ada dilewati |
 | `npm run build` | Berhasil; berkas statis di `dist/`, base `/CODE-TOEFL/` |
 | `npm audit` setelah pembaruan | Tidak ada kerentanan yang dilaporkan registry pada versi yang diuji |
 | Produksi audio | 109 stimulus + 1 cek suara dibuat, metadata durasi/hash tersimpan; pengulangan generator memakai ulang naskah yang sama |
@@ -17,11 +17,11 @@ Lingkungan: Linux x86_64, Node.js 24.19.0, npm 11.9.0, Vite 7.3.7, Playwright 1.
 | Halaman ETS | Format, persiapan, dan izin berhasil HTTPS HTTP 200; tabel Level 1 dikonfirmasi 16 Oktober 2026 |
 | Sumber Listening eksternal | Beranda dan katalog B1 ELLLO berhasil HTTP 200; pemutar ELLLO belum diuji. Target pemutar ETS dan Randall 403. Tidak ada media manusia lokal |
 
-## Unit dan penyimpanan (23)
+## Unit dan penyimpanan (24)
 
-Penilaian benar/salah/kosong dan input di luar rentang; tenggat absolut; perpindahan bagian ketika tab tertidur lama; submit idempoten; validasi/migrasi cadangan; interval kosakata 1/3/7/14; normalisasi kata; rekomendasi dengan bukti sedikit; kelompok konteks; sampel fondasi 60 soal; jumlah dataset dan komposisi Structure akhir; pencatatan waktu soal kosong dan pembatasan tenggat; penolakan hasil/durasi rusak; soal tak dibuka tidak dianggap dipelajari; hasil audio terganggu tidak direkomendasikan; round-trip IndexedDB dan JSON; upgrade database versi 1 tanpa menghapus kosakata. Tambahan: kelengkapan struktur 28 bab/84 subbab/56 cek (bukan validasi kebenaran bahasa), migrasi profil v1/v2 ke v3 dengan Listening default nonaktif, URL/catatan eksternal tervalidasi, latihan minimal lima soal dan konteks utuh serta penguatan baru, round-trip catatan melalui IndexedDB versi 2→3/JSON, dan pemeliharaan durasi jawaban lama tanpa questionTimes.
+Penilaian benar/salah/kosong dan input di luar rentang; tenggat absolut; perpindahan bagian ketika tab tertidur lama; submit idempoten; validasi/migrasi cadangan; interval kosakata 1/3/7/14; normalisasi kata; rekomendasi dengan bukti sedikit; kelompok konteks; sampel fondasi 60 soal; jumlah dataset dan komposisi Structure akhir; pencatatan waktu soal kosong dan pembatasan tenggat; penolakan hasil/durasi rusak; soal tak dibuka tidak dianggap dipelajari; hasil audio terganggu tidak direkomendasikan; round-trip IndexedDB dan JSON; upgrade database versi 1 tanpa menghapus kosakata. Tambahan: kelengkapan struktur 28 bab/84 subbab/56 cek (bukan validasi kebenaran bahasa), migrasi profil v1/v2 ke v3 dengan Listening default nonaktif, URL/catatan eksternal tervalidasi, latihan minimal lima soal dan konteks utuh serta penguatan baru, round-trip catatan melalui IndexedDB versi 2→3/JSON, pemeliharaan durasi jawaban lama tanpa questionTimes; serta mapping semua 28 bab ke paket latihan yang tersedia.
 
-## Browser produksi (16)
+## Browser produksi (17)
 
 1. Seluruh 110 MP3 diambil dari subpath, didekode oleh AudioContext, dibandingkan durasinya, dan diperiksa peak/RMS agar bukan rekaman kosong.
 2. Setelah opt-in arsip sintetis melalui Pengaturan: diagnostik 30 soal → hasil dan rekomendasi → materi → latihan → pembahasan → kosakata → refresh → kosakata tetap ada → tes singkat → jawaban pulih setelah refresh → hasil.
@@ -39,6 +39,7 @@ Penilaian benar/salah/kosong dan input di luar rentang; tenggat absolut; perpind
 14. Halaman materi/Listening HP tidak overflow; tema gelap dan perpindahan fokus keyboard antarisian berjalan.
 15. Database versi 2 berisi sesi Listening lama ditingkatkan menjadi versi 3; pilihan, keyakinan, materi selesai, dan durasi jawaban dipertahankan. Tidak memuat audio robot; pengguna dapat mengakhirinya dengan status terganggu.
 16. Error identification membedakan bagian yang harus diperbaiki dan tiga bagian yang sudah benar.
+17. Seluruh delapan bab fondasi/kosakata tambahan dibuka dari perpustakaan dan tombolnya menjalankan paket latihan sesuai topik; tiap paket minimal lima soal/konteks utuh.
 
 Pemutaran pada uji alur dipercepat dengan seek oleh harness setelah browser benar-benar memuat MP3. Tidak ada klaim bahwa asisten mendengarkan seluruh rekaman atau menjalankan simulasi selama 115 menit waktu nyata. Pemajuan waktu/tenggat adalah metode pengujian, bukan fitur bantuan yang diberikan dalam UI tes.
 
@@ -56,6 +57,8 @@ Kegagalan awal tersebut tidak dicatat sebagai lulus; pemeriksaan terdampak dijal
 
 ## Temuan pada perluasan materi
 
-Dua selector pengujian awal menjadi ambigu setelah tema kosakata ditambahkan dan diperbaiki agar menunjuk kontrol/area yang benar. Pengujian migrasi semula membuat paket dengan urutan berbeda dari diagnostik sebenarnya; seed disesuaikan ke Listening–Structure–Reading. Pemeriksaan lanjut menemukan durasi lama dapat kembali nol ketika `questionTimes` belum terisi: `recordQuestionTime` kini mempertahankan elapsed jawaban lama. Pengujian regresi khusus ditambahkan. Hasil akhir di atas adalah 23/23 Node dan 16/16 browser lulus, tidak ada gagal/dilewati.
+Dua selector pengujian awal menjadi ambigu setelah tema kosakata ditambahkan dan diperbaiki agar menunjuk kontrol/area yang benar. Pengujian migrasi semula membuat paket dengan urutan berbeda dari diagnostik sebenarnya; seed disesuaikan ke Listening–Structure–Reading. Pemeriksaan lanjut menemukan durasi lama dapat kembali nol ketika `questionTimes` belum terisi: `recordQuestionTime` kini mempertahankan elapsed jawaban lama. Pengujian regresi khusus ditambahkan. Hasil akhir di atas adalah 24/24 Node dan 17/17 browser lulus, tidak ada gagal/dilewati.
 
 Build produksi lulus dengan peringatan Vite bahwa satu bundle JavaScript melebihi 500 kB. Ini belum dioptimalkan dengan pemecahan bundle. Arsip MP3 sekitar 17 MiB tetap berada dalam repository untuk kompatibilitas, tetapi tidak dimuat oleh alur default teori. Tidak ada tambahan unduhan audio penerbit. Pengujian browser tidak memutar atau menilai kualitas rekaman manusia di situs eksternal.
+
+Pemeriksaan tambahan menemukan `practiceSkill` bab fondasi tertimpa nilai undefined saat penggabungan objek materi. Penggabungan diperbaiki; bab pengaturan waktu memakai latihan Reading rinci. Pengujian baru memeriksa mapping seluruh 28 bab dan menjalankan tombol latihan pada kedelapan bab tambahan melalui browser. Hasil akhir 24/24 Node dan 17/17 browser merujuk revisi yang mencakup perbaikan ini.
