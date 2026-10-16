@@ -44,3 +44,15 @@ npm run test:browser
 Validator memeriksa ID, pilihan, kunci, pembahasan, pelajaran, kutipan bukti, pemisahan stimulus, hash naskah dan MP3. Pemeriksaan audio browser mengecek decode dan energi suara, bukan ketepatan setiap pengucapan. Dengarkan rekaman baru dan tinjau bahasa secara terpisah sebelum menyebutnya tervalidasi linguistik.
 
 Simpan catatan revisi, sumber, tanggal, dan cakupan peninjauan. Jangan memakai cache, `node_modules/`, cadangan profil, atau lampiran pribadi dalam commit.
+
+## Bab materi dan sumber Listening
+
+`src/data/course.js` berisi uraian lanjut per ID keterampilan (`course`) dan delapan bab fondasi/kosakata (`foundations`). Setiap bab punya tujuan (`goals`), tiga subbab (`parts`: heading, text, example, analysis), jebakan (`pitfalls`), serta dua cek pemahaman (`checks`: prompt, answer, why). `src/data/lessons.js` menggabungkan katalog dan metadata sumber. Uraian Bahasa Indonesia, contoh Bahasa Inggris. Tautan ETS adalah acuan ruang lingkup format, bukan sumber salinan penjelasan. Periksa akurasi penggunaan dan pengecualian grammar secara terpisah dari lulus skema.
+
+`practiceSkill` menghubungkan bab tambahan ke bank latihan yang sesuai. `src/core/practice.js` mengumpulkan set belajar minimal 5 soal jika tersedia; seluruh pertanyaan stimulus dipulihkan setelah pencocokan topik, sehingga bacaan tidak terpotong. Penguatan memprioritaskan konteks yang belum pernah dikerjakan. Jangan memakai soal final sebagai contoh materi.
+
+Tema kosakata ada di `src/data/vocabulary-topics.js`; semua kata harus ada dalam `dictionary.js`. Tema mengatur entri yang sudah ada, tidak menambah jumlah kamus secara fiktif. Cek pemahaman bukan soal pilihan ganda dan tidak dimasukkan ke inventaris 600 soal.
+
+Tautan penerbit di `src/data/listening-sources.js` tidak memberi izin mengunduh atau mereproduksi audio/soal. Catat status verifikasi apa adanya. Jangan menghubungkan rekaman manusia yang tidak terkait dengan pertanyaan sintetis lama. Bila menambah penerbit, sesuaikan validasi URL, sumber/izin, dan pengujian; jangan mengizinkan protokol JavaScript/data. Audio sintetis tetap berlabel dan opt-in.
+
+Skema 3 menambah `listeningStudies` dan preferensi `syntheticAudio:false`. Cadangan skema 1–2 dimigrasikan tanpa menghapus progres. Jangan menurunkan nomor versi IndexedDB setelah pengguna membuka versi 3; versi aplikasi lama tidak dapat membuka database versi lebih baru pada origin yang sama.

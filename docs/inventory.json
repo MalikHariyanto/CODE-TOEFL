@@ -1,4 +1,13 @@
 {
+  "learning": {
+    "chapters": 28,
+    "subchapters": 84,
+    "comprehensionChecks": 56,
+    "vocabularyThemes": 5,
+    "themedEntries": 50
+  },
+  "localHumanAudioFiles": 0,
+  "syntheticAudioDefault": false,
   "totalQuestions": 600,
   "bySplit": {
     "diagnostic": {

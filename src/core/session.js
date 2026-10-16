@@ -32,7 +32,7 @@ export function advanceExpiredSections(session,questions,now=Date.now()){
 
 export function recordQuestionTime(session,now=Date.now()){
  const id=session.questionIds[session.index];session.questionTimes??={};
- session.questionTimes[id]=(session.questionTimes[id]||0)+Math.max(0,Math.round((now-session.lastQuestionAt)/1000));
+ session.questionTimes[id]=Math.max(session.questionTimes[id]||0,session.answers[id]?.elapsed||0)+Math.max(0,Math.round((now-session.lastQuestionAt)/1000));
  if(session.answers[id])session.answers[id].elapsed=session.questionTimes[id];
  session.lastQuestionAt=now;
 }

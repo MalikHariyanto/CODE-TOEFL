@@ -39,3 +39,15 @@ Label awal didasarkan pada tuntutan keterampilan: inferensi/tujuan, integrasi ko
 ## Prioritas lanjutan
 
 Tinjau 460 soal yang belum masuk putaran kedua; mintalah pengajar independen memeriksa ambiguitas dan kealamian seluruh bank. Dengarkan semua rekaman, ganti dengan rekaman lebih natural bila tersedia secara sah. Uji coba dengan pengguna diperlukan sebelum mengubah label menjadi klaim kesulitan empiris. Verifikasi halaman ETS setelah akses jaringan tersedia.
+
+## Perluasan materi dan perubahan Listening
+
+Ditambahkan 28 bab total (20 bab keterampilan diperluas + 8 fondasi/kosakata), 84 subbab, dan 56 cek pemahaman. Setiap subbab memuat penjelasan, contoh Inggris, serta analisis Indonesia; setiap cek memuat jawaban dan alasan. Lima tema kosakata menata 50 entri dari kamus 100 entri, bukan menambah kata baru. Materi dibaca ulang oleh penyusun untuk konsistensi pola, contoh, jawaban, dan batas klaim. Cakupan ini **tidak mengubah** hitungan peninjauan kedua 140/600 soal dan bukan tinjauan ahli independen.
+
+Pemeriksaan khusus meliputi: finite/nonfinite, kepala subjek, countability, embedded question, fungsi relative pronoun, bentuk sesudah connector, active/passive reduction, batas inversi, perbandingan sejajar, kehati-hatian inferensi, fungsi contoh, used to/be used to, hardly/hard, dan result in/from. Rumusan memakai kata pembatas seperti “umumnya” ketika aturan memiliki konteks/pengecualian. Contoh pendidikan ini bukan uraian lengkap semua tata bahasa Inggris.
+
+Perubahan pembahasan menempatkan alasan pengecoh yang dipilih pengguna di awal, lalu alasan kunci, bukti, dan empat pilihan. Pada error identification ditegaskan kunci adalah bagian yang perlu diperbaiki. Ini perbaikan presentasi dan akses ke teori; **bukan klaim seluruh 600 penjelasan telah ditulis ulang atau diaudit ulang oleh ahli**.
+
+Keluhan pengguna tentang suara mekanis ditangani dengan default teori dan sumber penerbit, bukan memberi label manusia pada eSpeak. Seluruh 109 stimulus masih sintetis, nonaktif secara bawaan; 0 rekaman manusia lokal. Paket ITP lengkap dengan rekaman manusia belum selesai/tersedia. Berdasarkan arahan pengguna, prioritas dialihkan ke teori dan penjelasan; import audio pihak ketiga tidak dipaksakan.
+
+Halaman format/persiapan/izin ETS kini berhasil diperiksa HTTP 200; ketentuan dan tanggal ada di SOURCES.md. Soal tes aktif terbaru tidak digunakan dan tidak diklaim tersedia.

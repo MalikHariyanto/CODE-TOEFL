@@ -1,0 +1,7 @@
+export const vocabularyTopics=[
+ {title:'Penelitian dan bukti',note:'Bedakan data, penafsiran, dan kepastian klaim. Gunakan contoh untuk menjelaskan makna tanpa melihat terjemahan.',words:['sample','specimen','evidence','finding','assumption','infer','uncertainty','calibrate','accurate','reliable']},
+ {title:'Perubahan dan kondisi',note:'Perhatikan tingkat perubahan: gradual bukan mendadak, deteriorate menyatakan memburuk, retain menyatakan mempertahankan.',words:['alter','gradual','deteriorate','shrink','emerge','undergo','retain','intact','sustained','trace']},
+ {title:'Alam dan lingkungan',note:'Latih relasi sebab–akibat, bukan hanya nama benda. Hubungkan drought, moisture, dan germinate dalam satu penjelasan.',words:['habitat','canopy','marsh','sediment','drought','moisture','germinate','dormant','erode','irrigate']},
+ {title:'Akademik dan organisasi',note:'Pelajari kolokasi dari kalimat contoh. Istilah ini membantu memahami pengumuman, kegiatan kampus, dan bacaan akademik.',words:['archive','reference','outline','fieldwork','curator','exhibit','retrieve','prioritize','withdraw','specify']},
+ {title:'Pembatas dan hubungan makna',note:'Kata-kata ini menentukan apakah simpulan terlalu kuat, hubungan berlawanan, atau suatu tindakan bersyarat.',words:['provided that','whereas','nevertheless','rule out','on my plate','constraint','sufficient','adequate','feasible','provisional']}
+];
