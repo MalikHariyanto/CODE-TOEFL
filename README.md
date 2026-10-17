@@ -128,9 +128,38 @@ scripts/                   produksi audio, validasi, inventaris
 
 Petunjuk penambahan ada di [CONTRIBUTING.md](CONTRIBUTING.md). Jangan mengedit kunci untuk menyesuaikan hasil uji. Perubahan ID setelah digunakan dapat memutus cadangan; lakukan migrasi eksplisit jika diperlukan.
 
+## Vercel
+
+Repository menyertakan `vercel.json`. Build Vercel menggunakan `npm run build:vercel` yang memvalidasi konten dan membangun aset pada **root domain `/`**, dengan output `dist`. GitHub Pages tetap memakai `npm run build` pada `/CODE-TOEFL/`. Tidak perlu mengganti URL audio secara manual.
+
+Di pengaturan proyek Vercel, gunakan:
+
+| Pengaturan | Nilai |
+| --- | --- |
+| Framework Preset | Vite |
+| Root Directory | Folder berisi `package.json`, `package-lock.json`, dan `vercel.json` (root repository) |
+| Install Command | `npm ci` |
+| Build Command | `npm run build:vercel` |
+| Output Directory | `dist` |
+| Node.js | 24.x |
+
+Pastikan deployment mengambil branch/commit yang sudah memuat perbaikan. Selama PR belum digabung, perbaikan ada pada branch `feat/human-listening`. Untuk domain Production, deploy/promosikan commit tersebut ke lingkungan Production Vercel. Folder ZIP lama dan deployment lama tidak berubah hanya karena kode branch sudah di-push. Jika pengaturan build/output sebelumnya dioverride, sesuaikan dengan tabel dan deploy ulang.
+
+Untuk mereproduksi root build secara lokal:
+
+```sh
+npm run build:vercel
+```
+
+Hasil `dist` ini ditujukan ke hosting root. `VERCEL=1 npx playwright test tests/browser/deployment.spec.js` menjalankan build, server preview root, dan pemeriksaan browser produksi (sintaks env ini untuk Linux/macOS; di PowerShell gunakan `$env:VERCEL='1'` terlebih dahulu, dan hapus dengan `Remove-Item Env:VERCEL` sesudahnya). Menjalankan `npm run preview` tanpa variabel `VERCEL` tetap memakai konfigurasi GitHub Pages `/CODE-TOEFL/`.
+
+Jika halaman hanya menampilkan “Menyiapkan ruang belajar…”, periksa apakah JavaScript/CSS di Network benar-benar mendapat berkas JS/CSS, bukan HTML/404, serta apakah yang dipublikasikan adalah hasil build `dist`. Gejala ini belum membuktikan satu penyebab pasti tanpa respons aset dan Console browser.
+
+Website `https://belajar-toefl-two.vercel.app/` tidak dapat diperiksa langsung dari lingkungan pengembangan (proxy menolak koneksi 403 pada 17 Oktober 2026). Pengujian root lokal bukan klaim deployment website tersebut sudah diperbaiki atau diterbitkan. Tidak ada pengaturan akun Vercel, merge PR, atau publikasi Production yang dilakukan oleh asisten.
+
 ## GitHub Pages
 
-Base Vite sudah `/CODE-TOEFL/`. Workflow `checks.yml` menjalankan pemeriksaan pada push/PR. Workflow `pages.yml` hanya dapat dijalankan manual; tidak otomatis menerbitkan website ketika kode di-push.
+Build standar memakai base `/CODE-TOEFL/`; lingkungan Vercel memakai `/` dan memiliki perintah build eksplisit tersendiri. Workflow `checks.yml` menjalankan pemeriksaan pada push/PR. Workflow `pages.yml` hanya dapat dijalankan manual; tidak otomatis menerbitkan website ketika kode di-push.
 
 Untuk menerbitkan sendiri, pilih sumber **GitHub Actions** di Settings → Pages, kemudian jalankan workflow **Publikasikan GitHub Pages (manual)** dari branch yang diinginkan. Verifikasi hasil deployment di GitHub sebelum membagikan URL. Mengunggah kode bukan bukti website telah online.
 

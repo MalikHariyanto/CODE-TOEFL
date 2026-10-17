@@ -11,7 +11,8 @@
     "test:browser": "playwright test",
     "content:check": "node scripts/validate-content.mjs",
     "audio:build": "python3 scripts/build-audio.py",
-    "inventory": "node scripts/inventory.mjs"
+    "inventory": "node scripts/inventory.mjs",
+    "build:vercel": "node scripts/validate-content.mjs && vite build --base /"
   },
   "devDependencies": {
     "@playwright/test": "1.61.1",
