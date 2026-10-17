@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {score,remaining,reviewSchedule,normalizeWord,validateBackup,freshState,recommendations,groupQuestions} from '../src/core/engine.js';
-import {newSession,finalizeSession,advanceExpiredSections} from '../src/core/session.js';
+import {newSession,finalizeSession,advanceExpiredSections,recordQuestionTime} from '../src/core/session.js';
 import {questions,questionById} from '../src/data/index.js';
 import {validateContent} from '../scripts/validate-content.mjs';
 const q=questions.slice(0,3);
@@ -15,7 +15,7 @@ test('final section expiry cannot create time after prolonged inactivity',()=>{
  assert.equal(advanceExpiredSections(s,questionById,1000+116*60000).finished,true);
 });
 test('submitting twice is idempotent and repeated questions are categorized',()=>{let state=freshState();const s=newSession('short',q,1000);s.visited=q.map(q=>q.id);s.answers[q[0].id]={choice:q[0].answer,confidence:'sure',elapsed:4};state=finalizeSession(state,s,questionById,10000);assert.equal(state.attempts.length,3);assert.equal(finalizeSession(state,s,questionById,11000).attempts.length,3);const second=newSession('practice',q,12000);second.visited=q.map(q=>q.id);state=finalizeSession(state,second,questionById,14000);assert.equal(state.attempts.at(-1).first,false);assert.equal(state.attempts.at(-1).assisted,true);});
-test('backup validates all records; migration from v1 keeps progress',()=>{const s=freshState();s.schemaVersion=1;delete s.completedLessons;assert.equal(validateBackup(s).schemaVersion,2);assert.deepEqual(validateBackup(s).completedLessons,[]);assert.throws(()=>validateBackup({...s,schemaVersion:99}));assert.throws(()=>validateBackup({...s,bookmarks:['<invalid>']},new Set(q.map(x=>x.id))));assert.throws(()=>validateBackup({...s,vocabulary:[{word:'x',meaning:'y',due:-1,stage:0,reviews:0}]}));assert.throws(()=>validateBackup({...s,activeSession:{}}));});
+test('backup validates all records; migration from v1 keeps progress',()=>{const s=freshState();s.schemaVersion=1;delete s.completedLessons;assert.equal(validateBackup(s).schemaVersion,3);assert.deepEqual(validateBackup(s).completedLessons,[]);assert.throws(()=>validateBackup({...s,schemaVersion:99}));assert.throws(()=>validateBackup({...s,bookmarks:['<invalid>']},new Set(q.map(x=>x.id))));assert.throws(()=>validateBackup({...s,vocabulary:[{word:'x',meaning:'y',due:-1,stage:0,reviews:0}]}));assert.throws(()=>validateBackup({...s,activeSession:{}}));});
 test('review intervals are 1, 3, 7, 14 days; failed review resets to 1 day',()=>{let card={word:'evidence',stage:-1,reviews:0};for(const d of [1,3,7,14]){card=reviewSchedule(card,true,100);assert.equal(card.due,100+d*86400000);}assert.equal(reviewSchedule(card,false,100).due,100+86400000);assert.equal(reviewSchedule(card,false,100).stage,0);});
 test('dictionary normalization handles capitalization and punctuation',()=>assert.equal(normalizeWord('“EVIDENCE,”'),'evidence'));
 test('recommendations expose sparse evidence rather than overclaiming',()=>{const a=q.map(x=>({questionId:x.id,choice:(x.answer+1)%4,mode:'diagnostic'}));const r=recommendations(a,questions);assert.ok(r.length>0);assert.ok(r.every(x=>x.tentative));});
@@ -27,3 +27,7 @@ test('backup rejects malformed results, durations and duplicate IDs',()=>{const 
 
 test('unopened blank questions do not become learned questions in progress',()=>{const s=newSession('short',q,1000);const done=finalizeSession(freshState(),s,questionById,2000);assert.equal(done.sessions[0].result.blank,3);assert.equal(done.attempts.length,1);assert.equal(done.attempts[0].questionId,q[0].id);});
 test('interrupted audio results do not produce recommendations',()=>{const s=newSession('diagnostic',q,1000);s.invalidAudio=true;s.answers[q[0].id]={choice:(q[0].answer+1)%4,elapsed:1,confidence:'guess'};const done=finalizeSession(freshState(),s,questionById,2000);assert.equal(done.attempts[0].valid,false);assert.deepEqual(recommendations(done.attempts,questions),[]);});
+test('recording question time preserves elapsed duration from older answers without questionTimes',()=>{
+ const s={questionIds:['S011'],index:0,answers:{S011:{choice:1,confidence:'sure',elapsed:12}},lastQuestionAt:1000};
+ recordQuestionTime(s,4000);assert.equal(s.questionTimes.S011,15);assert.equal(s.answers.S011.elapsed,15);
+});

@@ -1,4 +1,5 @@
-export const SCHEMA_VERSION = 2;
+import {validStudyUrl,listeningSources} from '../data/listening-sources.js';
+export const SCHEMA_VERSION = 3;
 export const SECTIONS = {listening:'Listening', structure:'Structure', reading:'Reading'};
 export const TEST_SECONDS = {listening:35*60,structure:25*60,reading:55*60};
 export function score(questions, answers) {
@@ -20,16 +21,17 @@ export function recommendations(attempts,questions,limit=4) {
  for(const a of attempts.filter(a=>a.mode!=='practice'&&a.valid!==false).slice(-300)) {const q=index.get(a.questionId);if(!q)continue;const x=groups[q.skill]??={skill:q.skill,n:0,wrong:0,section:q.section}; x.n++; if(a.choice!==q.answer)x.wrong++;}
  return Object.values(groups).filter(x=>x.wrong>0).sort((a,b)=>(b.wrong/b.n)-(a.wrong/a.n)||b.n-a.n).slice(0,limit).map(x=>({...x,tentative:x.n<5}));
 }
-export function freshState(){return {schemaVersion:SCHEMA_VERSION,attempts:[],sessions:[],vocabulary:[],bookmarks:[],notes:[],completedLessons:[],preferences:{theme:'light'},activeSession:null};}
+export function freshState(){return {schemaVersion:SCHEMA_VERSION,attempts:[],sessions:[],vocabulary:[],bookmarks:[],notes:[],completedLessons:[],listeningStudies:[],preferences:{theme:'light',syntheticAudio:false},activeSession:null};}
 function fail(message){throw new Error('Cadangan tidak valid: '+message);}
 export function validateBackup(input,knownQuestionIds,knownLessonIds) {
  if(!input||typeof input!=='object'||Array.isArray(input))fail('objek JSON diperlukan.');
  if(Object.hasOwn(input,'format')&&input.format!=='ruang-toefl-backup')fail('format berkas tidak dikenal.');
  const raw=input.data??input;
- if(![1,2].includes(raw.schemaVersion))fail('versi skema tidak didukung.');
+ if(![1,2,3].includes(raw.schemaVersion))fail('versi skema tidak didukung.');
  if(JSON.stringify(raw).length>10_000_000)fail('ukuran melampaui 10 MB.');
  const state={...freshState(),...raw,schemaVersion:SCHEMA_VERSION};
- const arr=['attempts','sessions','vocabulary','bookmarks','notes','completedLessons'];
+ state.preferences={syntheticAudio:false,...state.preferences};
+ const arr=['listeningStudies','attempts','sessions','vocabulary','bookmarks','notes','completedLessons'];
  for(const k of arr)if(!Array.isArray(state[k])||state[k].length>50000)fail('daftar '+k+' tidak sah.');
  const finite=x=>typeof x==='number'&&Number.isFinite(x)&&x>=0;
  const string=(x,max=5000)=>typeof x==='string'&&x.length<=max;
@@ -38,6 +40,8 @@ export function validateBackup(input,knownQuestionIds,knownLessonIds) {
  for(const v of state.vocabulary)if(!string(v.word,120)||!v.word.trim()||!string(v.meaning)||!finite(v.due)||!Number.isInteger(v.stage)||v.stage< -1||v.stage>3||!Number.isInteger(v.reviews)||v.reviews<0)fail('kosakata tidak sah.');
  for(const b of state.bookmarks)if(!known(b))fail('penanda tidak dikenal.');
  for(const n of state.notes)if(!known(n.questionId)||!string(n.text)||!['','vocabulary','structure','evidence','time','guess'].includes(n.cause))fail('catatan tidak sah.');
+ for(const n of state.listeningStudies)if(!n||!string(n.id,180)||!finite(n.at)||!listeningSources.some(s=>s.id===n.source)||!string(n.title,160)||!n.title.trim()||!string(n.url,2000)||!validStudyUrl(n.url)||!string(n.summary)||!n.summary.trim()||!string(n.phrases,3000))fail('catatan Listening tidak sah.');
+ if(new Set(state.listeningStudies.map(n=>n.id)).size!==state.listeningStudies.length)fail('ID catatan Listening duplikat.');
  for(const id of state.completedLessons)if(!string(id,100)||(knownLessonIds&&!knownLessonIds.has(id)))fail('materi tidak dikenal.');
  const session=s=>{
   if(!s||!string(s.id,180)||!['diagnostic','short','section','final','practice'].includes(s.mode)||!Array.isArray(s.questionIds)||!s.questionIds.length||s.questionIds.length>600||s.questionIds.some(id=>!known(id))||new Set(s.questionIds).size!==s.questionIds.length)fail('sesi tidak sah.');
@@ -50,6 +54,6 @@ export function validateBackup(input,knownQuestionIds,knownLessonIds) {
  for(const s of state.sessions){session(s);if(!s.result||!['correct','wrong','blank','total'].every(k=>Number.isInteger(s.result[k])&&s.result[k]>=0)||s.result.total!==s.questionIds.length||s.result.correct+s.result.wrong+s.result.blank!==s.result.total||s.result.accuracy!==s.result.correct/s.result.total||!finite(s.completedAt))fail('hasil sesi tidak sah.');}
  if(state.activeSession!==null)session(state.activeSession);
  if(new Set(state.attempts.map(a=>a.id)).size!==state.attempts.length||new Set(state.sessions.map(s=>s.id)).size!==state.sessions.length||new Set(state.vocabulary.map(v=>v.word)).size!==state.vocabulary.length)fail('ID duplikat.');
- if(!state.preferences||!['light','dark'].includes(state.preferences.theme))fail('tema tidak sah.');
+ if(!state.preferences||typeof state.preferences.syntheticAudio!=='boolean'||!['light','dark'].includes(state.preferences.theme))fail('tema tidak sah.');
  return state;
 }

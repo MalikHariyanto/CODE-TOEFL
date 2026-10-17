@@ -8,5 +8,12 @@ test('database schema version 1 upgrades without erasing its stored vocabulary',
  await new Promise((resolve,reject)=>{const r=indexedDB.deleteDatabase('ruang-toefl');r.onsuccess=resolve;r.onerror=()=>reject(r.error);});
  const original=freshState();original.schemaVersion=1;delete original.completedLessons;original.vocabulary=[{word:'trace',meaning:'jejak',stage:0,due:100,reviews:1}];
  await new Promise((resolve,reject)=>{const r=indexedDB.open('ruang-toefl',1);r.onupgradeneeded=()=>r.result.createObjectStore('state');r.onsuccess=()=>{const db=r.result,tx=db.transaction('state','readwrite');tx.objectStore('state').put(original,'profile');tx.oncomplete=()=>{db.close();resolve();};tx.onerror=()=>reject(tx.error);};});
- const restored=await readState();assert.equal(restored.schemaVersion,2);assert.equal(restored.vocabulary[0].word,'trace');assert.deepEqual(restored.completedLessons,[]);
+ const restored=await readState();assert.equal(restored.schemaVersion,3);assert.equal(restored.vocabulary[0].word,'trace');assert.deepEqual(restored.completedLessons,[]);
+});
+test('database version 2 migrates old preferences and keeps external-study notes in an actual IndexedDB round trip',async()=>{
+ await new Promise((resolve,reject)=>{const r=indexedDB.deleteDatabase('ruang-toefl');r.onsuccess=resolve;r.onerror=()=>reject(r.error);});
+ const original={...freshState(),schemaVersion:2,preferences:{theme:'dark'},completedLessons:['structure-core']};delete original.listeningStudies;
+ await new Promise((resolve,reject)=>{const r=indexedDB.open('ruang-toefl',2);r.onupgradeneeded=()=>r.result.createObjectStore('state');r.onsuccess=()=>{const db=r.result,tx=db.transaction('state','readwrite');tx.objectStore('state').put(original,'profile');tx.oncomplete=()=>{db.close();resolve();};tx.onerror=()=>reject(tx.error);};});
+ const migrated=await readState();assert.equal(migrated.schemaVersion,3);assert.equal(migrated.preferences.syntheticAudio,false);assert.deepEqual(migrated.completedLessons,['structure-core']);
+ migrated.listeningStudies.push({id:'real-note',source:'ets',at:100,title:'Catatan saya',url:'https://www.ets.org/toefl/itp/prepare.html',summary:'Contoh catatan pribadi.',phrases:'not until'});await writeState(migrated);assert.deepEqual((await readState()).listeningStudies,migrated.listeningStudies);assert.deepEqual(validateBackup(JSON.parse(backup(migrated))).listeningStudies,migrated.listeningStudies);
 });

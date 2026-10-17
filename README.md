@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Buka alamat yang dicetak Vite, dengan subpath `/CODE-TOEFL/`. Tidak perlu akun, backend, Python, token, atau API berbayar. Semua MP3 sudah disertakan.
+Buka alamat yang dicetak Vite, dengan subpath `/CODE-TOEFL/`. Tidak perlu akun, backend, Python, token, atau API berbayar. Arsip MP3 sintetis sudah disertakan, tetapi dinonaktifkan secara bawaan. Materi teori tidak memerlukan audio.
 
 Untuk hasil statis:
 
@@ -22,16 +22,35 @@ npm run preview
 
 Buka alamat preview dengan subpath `/CODE-TOEFL/`. Folder `dist/` berisi hasil hosting; jangan membuka `index.html` melalui `file://` karena modul dan IndexedDB membutuhkan origin HTTP yang konsisten.
 
+## Memperbarui versi ZIP di Windows
+
+1. Di aplikasi lama, buka **Pengaturan → Ekspor JSON** terlebih dahulu.
+2. Unduh ZIP dari branch yang memuat perubahan, ekstrak ke folder baru, dan buka terminal **di folder yang berisi `package.json` dan `package-lock.json`**.
+3. Jalankan `npm ci`, lalu `npm run dev`. Jangan menjalankan dua server sekaligus pada port berbeda jika ingin memakai progres origin yang sama.
+4. Buka alamat yang dicetak terminal dengan `/CODE-TOEFL/`. Masuk **Materi lengkap** untuk grammar/kosakata/Structure atau **Listening: teori & sumber**.
+5. Jika progres tidak tampil karena alamat/port berubah, gunakan **Pengaturan → Impor JSON** pada cadangan. Jangan menghapus profil lama sebelum memeriksa pemulihan.
+
+Perubahan yang di-push ke GitHub tidak otomatis memperbarui folder ZIP yang sudah ada di komputer.
+
 ## Yang tersedia
 
-- Beranda dari riwayat nyata, diagnostik 30 soal, dan jalur 8 minggu yang fleksibel.
+- Beranda dari riwayat nyata dan jalur 8 minggu yang fleksibel. Tombol awal mengarahkan ke materi.
+- **28 bab, 84 subbab, 56 cek pemahaman**: grammar dasar, Structure, kosakata, Reading, dan teori Listening. Ada tujuan belajar, fondasi, contoh dibedah, jebakan, serta jawaban cek pemahaman dengan alasan. Angka ini dihitung dari data, bukan tambahan bank soal.
+- **Bank dan latihan dari materi: paket 10–20 soal**, dengan pilihan sasaran 10, 15, atau 20. Jumlah aktual dicetak pada kartu; bacaan/audio tetap utuh dan soal tidak digandakan untuk memenuhi jumlah. Structure dikelompokkan per topik.
+- Setiap kartu menampilkan pratinjau dan ID soal pertama dari paket yang benar-benar akan dibuka. Paket dalam satu tampilan tidak tumpang tindih. Mengubah filter/ukuran dapat menyusun ulang soal; gunakan filter belum dikerjakan untuk menghindari soal lama.
+- Memilih paket berbeda saat latihan belum selesai meminta konfirmasi: latihan lama disimpan ke Perkembangan lalu paket baru dibuka dari nomor 1. Membatalkan tetap di bank; melanjutkan paket yang sama mempertahankan nomor dan jawaban. Sesi lama satu soal diberi penjelasan dan tombol beralih ke paket baru.
+- Bila filter sangat sempit belum dapat menghasilkan 10 soal dalam konteks utuh, aplikasi menjelaskan kekurangan dan menawarkan perluasan filter. Soal pendamping dari bacaan/audio dihitung terpisah dari soal yang cocok filter.
+- Latihan materi/penguatan mendahulukan paket dengan soal belum dikerjakan paling banyak; setelah bank topik habis, soal lama dapat muncul kembali.
+- Pembahasan menyorot **alasan pilihan pengguna**, alasan kunci, empat opsi, bukti, dan strategi terkait. Pada error identification, label memperjelas bagian yang harus diperbaiki.
 - 600 soal: 240 Structure, 180 Listening, 180 Reading. Pembahasan berbahasa Indonesia menyertakan kunci, alasan keempat pilihan, konsep, dan bukti.
 - 36 bacaan, 109 rekaman stimulus, satu rekaman cek suara, serta 100 entri kamus lokal. Audio sintetis eSpeak NG; bukan rekaman penutur manusia.
 - Filter bagian, topik, kesulitan, soal baru, pernah salah, dan penanda. Soal berbagi konteks selalu dibuka sebagai satu kelompok.
 - Pilihan “yakin”/“masih menebak”, catatan penyebab kesalahan menurut pengguna, dan catatan pribadi.
 - Kamus melalui pencarian, seleksi kata pada materi, atau tombol pencarian yang dapat diakses keyboard. Kata tak tersedia ditandai jujur, dapat diberi catatan, atau dicari melalui tautan eksternal.
+- Kosakata per tema: 5 kelompok berisi 50 entri dari 100 kata kamus, lengkap dengan contoh dan tombol simpan.
 - Flashcard: ingat → 1, 3, 7, 14 hari; belum ingat → 1 hari. Aturan sederhana, bukan pengukuran ingatan terkalibrasi.
-- Tes singkat 10–15 soal, tes per bagian, dan simulasi akhir 140 soal. Paket akhir memakai stimulus tersendiri.
+- Tes singkat dan tes per bagian Structure/Reading aktif tanpa audio. Diagnostik 30 soal, tes Listening/campuran, dan simulasi akhir 140 soal memakai **arsip sintetis opsional**; tidak tersedia sebagai paket rekaman manusia. Paket akhir memakai stimulus tersendiri.
+- Jalur Listening teori dan tautan penerbit ETS/ELLLO/Randall, dengan petunjuk belajar dan catatan pribadi yang tersimpan/ikut cadangan. Audio dan kuis eksternal dibuka di situs asal; pemutar eksternal belum diuji dari lingkungan pengembangan.
 - IndexedDB, cadangan JSON tervalidasi, migrasi skema, tema terang/gelap, serta layout laptop/HP.
 
 ## Paket dan waktu
@@ -54,8 +73,10 @@ Diagnostik hanyalah pemetaan awal. Rekomendasi mengelompokkan respons tes valid 
 
 Satu profil lokal pada origin browser yang sama. Tidak dikirim ke server. Membuka port atau domain lain menghasilkan ruang penyimpanan lain. Menghapus data browser dapat menghapus seluruh progres: ekspor secara berkala melalui Pengaturan. Impor mengganti profil setelah validasi dan konfirmasi.
 
-- `src/core/storage.js`: database IndexedDB versi 2, satu dokumen profil dalam store `state`.
-- `src/core/engine.js`: skema profil versi 2, validasi dan migrasi v1 → v2 dengan nilai awal bidang tambahan.
+- `src/core/storage.js`: database IndexedDB versi 3, satu dokumen profil dalam store `state`.
+- `src/core/engine.js`: skema profil versi 3, validasi dan migrasi v1/v2 → v3 dengan nilai awal bidang tambahan.
+- Catatan eksternal disimpan dalam `listeningStudies`, terpisah dari `attempts` dan akurasi tes. Preferensi `syntheticAudio` default false; progres lama dipertahankan. Sesi Listening lama diberi status terganggu bila arsip dinonaktifkan; jawaban dan tenggat tetap tersimpan.
+- Isian cek pemahaman materi hanya refleksi sementara, tidak disimpan dan tidak menghasilkan skor.
 - `src/core/session.js`: sesi, durasi, penguncian bagian, dan penilaian idempoten (sesi sama tidak dinilai dua kali).
 - Soal yang belum dibuka tetap kosong pada hasil tes, tetapi tidak menandai soal tersebut sebagai sudah dipelajari.
 - Perbandingan membedakan pertama/pengulangan dan mode belajar/tes. Kedua pengelompokan ini adalah dimensi berbeda, sehingga tidak boleh dijumlahkan sebagai empat kelompok terpisah.
@@ -94,18 +115,51 @@ src/data/structure.js       kalimat dan soal Structure
 src/data/reading.js         bacaan dan pertanyaan Reading
 src/data/listening.js       naskah dan pertanyaan Listening
 src/data/*refinements.js    revisi pengecoh dari peninjauan kedua
-src/data/lessons.js         jalur materi
+src/data/lessons.js         jalur dan metadata materi
+src/data/course.js          28 bab, contoh, cek pemahaman
+src/data/vocabulary-topics.js kelompok kosakata
+src/data/listening-sources.js katalog tautan penerbit
+src/views/listening.js      alur teori dan catatan eksternal
 src/data/dictionary.js      kamus dan alias bentuk kata
 src/data/audio-manifest.json hash, durasi, suara, status audio
-public/audio/              MP3 siap diputar
+public/audio/              arsip MP3 sintetis opsional
 scripts/                   produksi audio, validasi, inventaris
 ```
 
 Petunjuk penambahan ada di [CONTRIBUTING.md](CONTRIBUTING.md). Jangan mengedit kunci untuk menyesuaikan hasil uji. Perubahan ID setelah digunakan dapat memutus cadangan; lakukan migrasi eksplisit jika diperlukan.
 
+## Vercel
+
+Repository menyertakan `vercel.json`. Build Vercel menggunakan `npm run build:vercel` yang memvalidasi konten dan membangun aset pada **root domain `/`**, dengan output `dist`. GitHub Pages tetap memakai `npm run build` pada `/CODE-TOEFL/`. Tidak perlu mengganti URL audio secara manual.
+
+Di pengaturan proyek Vercel, gunakan:
+
+| Pengaturan | Nilai |
+| --- | --- |
+| Framework Preset | Vite |
+| Root Directory | Folder berisi `package.json`, `package-lock.json`, dan `vercel.json` (root repository) |
+| Install Command | `npm ci` |
+| Build Command | `npm run build:vercel` |
+| Output Directory | `dist` |
+| Node.js | 24.x |
+
+Pastikan deployment mengambil branch/commit yang sudah memuat perbaikan. Selama PR belum digabung, perbaikan ada pada branch `feat/human-listening`. Untuk domain Production, deploy/promosikan commit tersebut ke lingkungan Production Vercel. Folder ZIP lama dan deployment lama tidak berubah hanya karena kode branch sudah di-push. Jika pengaturan build/output sebelumnya dioverride, sesuaikan dengan tabel dan deploy ulang.
+
+Untuk mereproduksi root build secara lokal:
+
+```sh
+npm run build:vercel
+```
+
+Hasil `dist` ini ditujukan ke hosting root. `VERCEL=1 npx playwright test tests/browser/deployment.spec.js` menjalankan build, server preview root, dan pemeriksaan browser produksi (sintaks env ini untuk Linux/macOS; di PowerShell gunakan `$env:VERCEL='1'` terlebih dahulu, dan hapus dengan `Remove-Item Env:VERCEL` sesudahnya). Menjalankan `npm run preview` tanpa variabel `VERCEL` tetap memakai konfigurasi GitHub Pages `/CODE-TOEFL/`.
+
+Jika halaman hanya menampilkan “Menyiapkan ruang belajar…”, periksa apakah JavaScript/CSS di Network benar-benar mendapat berkas JS/CSS, bukan HTML/404, serta apakah yang dipublikasikan adalah hasil build `dist`. Gejala ini belum membuktikan satu penyebab pasti tanpa respons aset dan Console browser.
+
+Website `https://belajar-toefl-two.vercel.app/` tidak dapat diperiksa langsung dari lingkungan pengembangan (proxy menolak koneksi 403 pada 17 Oktober 2026). Pengujian root lokal bukan klaim deployment website tersebut sudah diperbaiki atau diterbitkan. Tidak ada pengaturan akun Vercel, merge PR, atau publikasi Production yang dilakukan oleh asisten.
+
 ## GitHub Pages
 
-Base Vite sudah `/CODE-TOEFL/`. Workflow `checks.yml` menjalankan pemeriksaan pada push/PR. Workflow `pages.yml` hanya dapat dijalankan manual; tidak otomatis menerbitkan website ketika kode di-push.
+Build standar memakai base `/CODE-TOEFL/`; lingkungan Vercel memakai `/` dan memiliki perintah build eksplisit tersendiri. Workflow `checks.yml` menjalankan pemeriksaan pada push/PR. Workflow `pages.yml` hanya dapat dijalankan manual; tidak otomatis menerbitkan website ketika kode di-push.
 
 Untuk menerbitkan sendiri, pilih sumber **GitHub Actions** di Settings → Pages, kemudian jalankan workflow **Publikasikan GitHub Pages (manual)** dari branch yang diinginkan. Verifikasi hasil deployment di GitHub sebelum membagikan URL. Mengunggah kode bukan bukti website telah online.
 
@@ -113,4 +167,4 @@ Untuk menerbitkan sendiri, pilih sumber **GitHub Actions** di Settings → Pages
 
 Lihat [SOURCES.md](docs/SOURCES.md), [CONTENT-LICENSE.md](CONTENT-LICENSE.md), dan [LICENSE](LICENSE). Tidak ada materi ETS atau penyedia lain yang disalin massal. Lampiran AES bukan sumber aplikasi dan tidak disertakan.
 
-**Batasan nyata:** akses langsung ke tiga halaman ETS ditolak jaringan pada sesi pengembangan, sehingga verifikasi web resminya masih tertunda. Konten belum ditinjau ahli independen atau diuji empiris. Audit kedua penyusun mencakup sampel 140 soal; 460 lainnya masih draf editorial. Suara sintetis mekanis dan belum diaudit pengucapannya satu per satu oleh manusia. Tidak ada terjemahan bebas kalimat, sinkronisasi lintas perangkat, service worker untuk jaminan offline, atau keamanan ujian terawasi; aset statis tetap dapat diperiksa dari sumber browser.
+**Batasan nyata:** format publik, persiapan, dan ketentuan izin ETS diperiksa langsung 16 Oktober 2026. Ini bukan akses soal tes aktif terbaru. Beranda/katalog ELLLO berhasil dibaca; pemutarnya belum diuji. Pemutar contoh ETS dan situs Randall diblokir jaringan; tidak ada rekaman manusia yang diunduh atau diganti di dalam aplikasi. Konten belum ditinjau ahli independen atau diuji empiris. Audit kedua penyusun mencakup sampel 140 soal; 460 lainnya masih draf editorial. Suara sintetis mekanis dan belum diaudit pengucapannya satu per satu oleh manusia. Tidak ada terjemahan bebas kalimat, sinkronisasi lintas perangkat, service worker untuk jaminan offline, atau keamanan ujian terawasi; aset statis tetap dapat diperiksa dari sumber browser.

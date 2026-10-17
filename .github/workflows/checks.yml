@@ -18,3 +18,7 @@ jobs:
       - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npm run test:browser
+      - name: Periksa build Vercel pada root domain
+        run: npx playwright test tests/browser/deployment.spec.js
+        env:
+          VERCEL: '1'
