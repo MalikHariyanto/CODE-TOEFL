@@ -32,6 +32,14 @@ Buka alamat preview dengan subpath `/CODE-TOEFL/`. Folder `dist/` berisi hasil h
 
 Perubahan yang di-push ke GitHub tidak otomatis memperbarui folder ZIP yang sudah ada di komputer.
 
+## Meja belajar grammar
+
+Menu **Grammar dari nol** menyediakan 11 pembahasan dalam tiga tahap: fondasi kalimat, mengubah kalimat, dan penerapan ke Structure TOEFL. Cari berdasarkan kebingungan (misalnya “is”, “studies”, atau “kalimat panjang”), atau ikuti urutan bab.
+
+Setiap bab berisi konsep berbahasa Indonesia, dua contoh kalimat pembanding, bedah kesalahan, istilah grammar, serta dua latihan singkat dengan petunjuk dan alasan setiap pilihan. Jawaban latihan konsep bertahan selama halaman aplikasi terbuka dan direset saat muat ulang; tidak masuk skor TOEFL atau cadangan progres tes.
+
+Bantuan **Kata pilihan** menerangkan kosakata akademik dan frasa khusus dari daftar editorial lokal, sesuai konteks. Kata umum seperti *she*, *every*, dan *day* tidak diterjemahkan otomatis. Bantuan ini juga muncul pada contoh materi lama, latihan Structure/Reading, dan pembahasan hasil. Pada Listening, bantuan kosakata hadir setelah menjawab. Bantuan tidak muncul selama tes dengan waktu berjalan. Tidak menggunakan layanan penerjemah atau API.
+
 ## Yang tersedia
 
 - Beranda dari riwayat nyata dan jalur 8 minggu yang fleksibel. Tombol awal mengarahkan ke materi.
