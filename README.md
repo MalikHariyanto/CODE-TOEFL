@@ -34,7 +34,9 @@ Perubahan yang di-push ke GitHub tidak otomatis memperbarui folder ZIP yang suda
 
 ## Meja belajar grammar
 
-Menu **Grammar dari nol** menyediakan 11 pembahasan dalam tiga tahap: fondasi kalimat, mengubah kalimat, dan penerapan ke Structure TOEFL. Cari berdasarkan kebingungan (misalnya “is”, “studies”, atau “kalimat panjang”), atau ikuti urutan bab.
+Menu **Grammar dari nol** menyediakan 12 pembahasan dalam tiga tahap: fondasi kalimat, mengubah kalimat, dan penerapan ke Structure TOEFL. Cari berdasarkan kebingungan (misalnya “is”, “studies”, atau “kalimat panjang”), atau ikuti urutan bab.
+
+Bab **Although atau despite?** membandingkan klausa, kelompok kata benda, dan bentuk -ing dengan contoh hujan, rasa lelah, serta kerusakan peralatan. Istilah kata benda/bentuk nominal, frasa, klausa (beserta subject dan verb), dan gerund dijelaskan dengan bahasa sederhana pada bab penghubung dan bab ini. Termasuk penjelasan failed/failure, despite tanpa of, although tanpa but, posisi klausa, dan bentuk lanjutan. Kartu kesalahan pada bab penghubung memiliki tautan langsung ke pembahasan ini.
 
 Setiap bab berisi konsep berbahasa Indonesia, dua contoh kalimat pembanding, bedah kesalahan, istilah grammar, serta dua latihan singkat dengan petunjuk dan alasan setiap pilihan. Jawaban latihan konsep bertahan selama halaman aplikasi terbuka dan direset saat muat ulang; tidak masuk skor TOEFL atau cadangan progres tes.
 

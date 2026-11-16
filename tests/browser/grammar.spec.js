@@ -4,7 +4,7 @@ async function openDesk(page){await page.goto('./');await page.getByRole('link',
 
 test('grammar desk searches by confusion and explains an incorrect answer before a new attempt',async({page})=>{
  await openDesk(page);await expect(page.getByRole('heading',{name:'Ngerti kalimatnya. Kenali polanya.'})).toBeVisible();
- await expect(page.locator('.grammar-chapter')).toHaveCount(11);
+ await expect(page.locator('.grammar-chapter')).toHaveCount(12);
  await page.getByLabel('Gue bingung di…').fill('studies');await page.getByRole('button',{name:'Cari pembahasan',exact:true}).click();
  const chapter=page.locator('.grammar-chapter').filter({has:page.getByRole('heading',{name:'Study atau studies?',exact:true})});await chapter.getByRole('button',{name:'Buka pembahasan →'}).click();
  const first=page.locator('[data-grammar-check="agreement-0"]');await expect(first.locator('.academic-help')).toHaveCount(0);
@@ -45,4 +45,28 @@ test('grammar help stays readable on mobile, supports keyboard and dark theme',a
  });expect(contrast).toBeGreaterThan(4.5);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.screenshot({path:'/tmp/grammar-desk-mobile.png',fullPage:true});
+});
+
+test('connector correction opens a simple although/despite lesson with nominal and clause definitions',async({page})=>{
+ await openDesk(page);
+ await page.getByLabel('Gue bingung di…').fill('clausa');await page.getByRole('button',{name:'Cari pembahasan',exact:true}).click();
+ await expect(page.locator('.grammar-chapter')).toHaveCount(2);
+ await page.locator('.grammar-chapter').filter({has:page.getByRole('heading',{name:'Sambungkan ide dengan jelas',exact:true})}).getByRole('button',{name:'Buka pembahasan →',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Klausa itu apa?',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Pelajari although vs despite →',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Although atau despite?',exact:true})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'Kata benda dan bentuk nominal itu apa?',exact:true})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'Frasa itu apa?',exact:true})).toBeVisible();
+ await expect(page.locator('.grammar-foundations')).toContainText('subject dan verb');
+ await expect(page.locator('.grammar-walkthrough')).toContainText('Despite the equipment failure');
+ await expect(page.locator('.grammar-walkthrough')).toContainText('Although tired');
+ const first=page.locator('[data-grammar-check="although-despite-0"]');
+ await first.locator('input[value="1"]').check();await first.getByRole('button',{name:'Periksa jawaban',exact:true}).click();
+ await expect(first.getByRole('status')).toContainText('Despite being tired');
+ await first.locator('input[value="0"]').check();await first.getByRole('button',{name:'Periksa lagi',exact:true}).click();
+ await expect(first.getByRole('status')).toContainText('Tepat.');
+ const second=page.locator('[data-grammar-check="although-despite-1"]');await second.locator('input[value="1"]').check();await second.getByRole('button',{name:'Periksa jawaban',exact:true}).click();
+ await expect(second.getByRole('status')).toContainText('kelompok kata benda');
+ await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.screenshot({path:'/tmp/although-despite-mobile.png',fullPage:true});
 });

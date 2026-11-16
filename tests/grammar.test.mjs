@@ -4,7 +4,7 @@ import {grammarChapters,grammarStages} from '../src/data/grammar.js';
 import {glossaryFor} from '../src/data/academic-glossary.js';
 
 test('guided grammar curriculum provides comparisons, corrections and two explained checks per chapter',()=>{
- assert.equal(grammarChapters.length,11);assert.equal(new Set(grammarChapters.map(c=>c.id)).size,11);
+ assert.equal(grammarChapters.length,12);assert.equal(new Set(grammarChapters.map(c=>c.id)).size,12);
  for(const c of grammarChapters){
   assert.ok(grammarStages[c.stage]);assert.ok(c.goal&&c.concept&&c.terms,c.id);
   assert.equal(c.examples.length,2,c.id);for(const e of c.examples)assert.ok(e.sentence&&e.pattern&&e.why,c.id);
